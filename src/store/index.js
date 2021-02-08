@@ -5,8 +5,12 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    rutaOpcion : ''
   },
   mutations: {
+    navegar:function(state,newRoute){
+      state.rutaOpcion = newRoute
+    }
   },
   actions: {
   },
