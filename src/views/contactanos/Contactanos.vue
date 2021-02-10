@@ -11,7 +11,7 @@
             >
                 <span style="color:white ; font-weight : bold; font-size: 18px">Rentax</span>
                 <span style="color:white ; font-size: 18px">La Primavera San Agustín 248, C.P. 80199</span>
-                <span style="color:white ; font-size: 18px">Culiacàn Rosales, Sinaloa, Mèxico </span>
+                <span style="color:white ; font-size: 18px">Culiacán Rosales, Sinaloa, México </span>
                 <span style="color:white ; font-size: 18px">Oficina (667) 713-3154</span>
                 <span style="color:white ; font-size: 18px">Oficina (667) 210-0494</span>
                 <v-divider></v-divider>

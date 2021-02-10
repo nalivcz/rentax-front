@@ -76,7 +76,7 @@ export default {
           },
           {
               id: 4,
-              descripcion : 'BIENES RAÌCES',
+              descripcion : 'BIENES RAÍCES',
               ruta : 'bienesRaices',
               subMenus : [
                   {
@@ -89,7 +89,7 @@ export default {
           },
           {
               id: 5,
-              descripcion : 'GALERÌA',
+              descripcion : 'GALERÍA',
               ruta : 'galeria',
               subMenus : [
                   {
@@ -102,7 +102,7 @@ export default {
           },
           {
               id: 6,
-              descripcion : 'CONTÀCTANOS',
+              descripcion : 'CONTÁCTANOS',
               ruta : 'contactanos',
               subMenus : [
                   {
