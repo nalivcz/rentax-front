@@ -1,9 +1,7 @@
 <template >
   <v-app>
     <HeaderMenu></HeaderMenu>
-    <div style="padding : 180px">
-        <h1><center>Bienvenido al sitio web de Rentax</center></h1>
-    </div>
+    <Inicio style="margin-top:150px"></Inicio>
     <Footer></Footer>
     </v-app>
 </template>
@@ -12,14 +10,15 @@
 
 import Footer from '../components/PageAppComponents/Footer' ; 
 import HeaderMenu from '../components/PageAppComponents/HeaderMenu' ; 
+import Inicio from '../views/inicio/Inicio';
 export default {
   name: "Index",
 
   components: {
     Footer,
-    HeaderMenu
+    HeaderMenu,
+    Inicio
   },
-
   data: () => ({
     
     selectedItem: 0,

@@ -8,11 +8,11 @@
     >
         <v-container class="text-center">
             <v-row justify="center">
-                <v-img
-                max-height="67"
-                max-width="232"
+                <img
+                width="220px"
                 src="../../assets/logorentax.jpg"
-                ></v-img>   
+                @click="irInicio()"
+                >   
             </v-row>
 
             <v-row
@@ -115,5 +115,10 @@ export default {
           },
       ]
     }),
+    methods:{
+        irInicio:function(){
+            this.$router.push('/');
+        }
+    }
 }
 </script>

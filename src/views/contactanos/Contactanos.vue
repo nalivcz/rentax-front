@@ -85,7 +85,6 @@
         </v-form>
         </v-container>       
     </div>
-   
 </template>
 <script>
 export default {
