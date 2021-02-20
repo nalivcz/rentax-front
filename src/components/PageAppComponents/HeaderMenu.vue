@@ -40,12 +40,6 @@ export default {
               descripcion : 'NOSOTROS',
               ruta : 'nosotros',
               subMenus : [
-                  {
-                      titulo : 'Opcion 1'
-                  },
-                  {
-                      titulo : 'Opcion 2'
-                  }
               ]
           },
           {
@@ -54,10 +48,13 @@ export default {
               ruta : 'desarrollos',
               subMenus : [
                   {
-                      titulo : 'Opcion 1'
+                      titulo : 'Tu casa a la medida '
                   },
                   {
-                      titulo : 'Opcion 2'
+                      titulo : 'San Agustin 425 Departamentos'
+                  },
+                  {
+                      titulo : 'Veranda Los Cabos'
                   }
               ]
           },
@@ -67,10 +64,19 @@ export default {
               ruta : 'comercialOficinas',
               subMenus : [
                   {
-                      titulo : 'Opcion 1'
+                      titulo : 'Centro Andrade'
                   },
                   {
-                      titulo : 'Opcion 2'
+                      titulo : 'Centro Balcones'
+                  },
+                  {
+                      titulo : 'Centro Alfa'
+                  },
+                  {
+                      titulo : 'Centro Delta'
+                  },
+                  {
+                      titulo : 'Centro 87'
                   }
               ]
           },
@@ -80,10 +86,13 @@ export default {
               ruta : 'bienesRaices',
               subMenus : [
                   {
-                      titulo : 'Opcion 1'
+                      titulo : 'Casas y Departamentos'
                   },
                   {
-                      titulo : 'Opcion 2'
+                      titulo : 'Áreas Comerciales'
+                  },
+                  {
+                      titulo : 'Áreas Industriales'
                   }
               ]
           },
@@ -92,25 +101,14 @@ export default {
               descripcion : 'GALERÍA',
               ruta : 'galeria',
               subMenus : [
-                  {
-                      titulo : 'Opcion 1'
-                  },
-                  {
-                      titulo : 'Opcion 2'
-                  }
+                 
               ]
           },
           {
               id: 6,
               descripcion : 'CONTÁCTANOS',
               ruta : 'contactanos',
-              subMenus : [
-                  {
-                      titulo : 'Opcion 1'
-                  },
-                  {
-                      titulo : 'Opcion 2'
-                  }
+              subMenus : [    
               ]
           },
       ]
