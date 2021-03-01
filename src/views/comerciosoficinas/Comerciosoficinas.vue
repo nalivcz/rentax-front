@@ -13,80 +13,41 @@
         </div>
         <div style="background-color : #e2e2e4; display:flex; flex-direction : column; padding-top:10px; padding-bottom:40px">
             <div style="margin-top : 20px ; padding : 30px;">
-                <span  style=" font-size:36px; color: GREEN; letter-spacing:16px">PLAZAS Y OFICINAS</span>
+                <span  style=" font-size:36px; color: GREEN; letter-spacing:8px" class="CircularStd-Medium">PLAZAS Y OFICINAS</span>
+                <center><hr style="background-color:#4d4d4f; width:60px; border: 2px solid #4d4d4f;"></center>
             </div> 
+    
             <div style="display:flex; flex-direction: row ; justify-content: space-evenly">
-                <div style="display: flex; flex-direction:column;">
-                <v-avatar size="230" color="#125919">
-                <img
-                    src="https://cdn.vuetifyjs.com/images/john.jpg"
-                    alt="John"
-                    style="opacity : .5"
-                >
-                <div style="position:absolute; display:flex; flex-direction : column;  justify-content: space-evenly;">
-                <span class="white--text " style="font-size: 24px; font-weigth: bold">Centro Andrade</span>
-                <div>
-                    <v-chip
-                    class="ma-2"
-                    outlined
-                    color="white"
-                    >
-                    VER MÁS
-                    </v-chip>
-                </div>
-                </div>
-                </v-avatar>
-                </div>
-                <div style="display: flex; flex-direction : column;">
-                <v-avatar size="230" color="#125919">          
-                <img
-                    src="https://cdn.vuetifyjs.com/images/john.jpg"
-                    alt="John"
-                    style="opacity : .5"
-                >
-                <div style="position:absolute; display:flex; flex-direction : column">
-                <span class="white--text " style="font-size: 24px; font-weigth: bold">Centro Alfa</span>
-                <div>
-                    <v-chip
-                    class="ma-2"
-                    outlined
-                    color="white"
-                    >
-                    VER MÁS
-                    </v-chip>
-                </div>
-                </div>
-                </v-avatar>
-                </div>
-                <div style="display: flex; flex-direction : column;">
-                <v-avatar size="230" color="#125919">
-                <img
-                    src="https://cdn.vuetifyjs.com/images/john.jpg"
-                    alt="John"
-                    style="opacity : .5"
-                >
-                <div style="position:absolute; display:flex; flex-direction : column">
-                <span class="white--text " style="font-size: 24px; font-weigth: bold">Centro 87</span>
-                <div>
-                    <v-chip
-                    class="ma-2"
-                    outlined
-                    color="white"
-                    >
-                    VER MÁS
-                    </v-chip>
-                </div>
-                </div>
-                </v-avatar>
-               
-                </div>   
+                <template v-for="item in items" v-bind:id="item.titulo">
+                    <PlasasyOficinas :key="item.titulo" :titulo = item.titulo :srcImagen = item.src></PlasasyOficinas>
+                </template> 
             </div>  
              
         </div>
     </div>
 </template>
 <script>
+import PlasasyOficinas from '../../components/ComerciosOficinasComponents/PlazasyOficinas';
 export default {
-    name : 'ComerciosOficinas'
+    name : 'ComerciosOficinas',
+    components : {
+        PlasasyOficinas
+    },
+    data : () => ({
+          items :[
+             {
+                 titulo : "Centro Andrade",
+                 src : "https://cdn.vuetifyjs.com/images/john.jpg",
+             },
+             {
+                 titulo : "Centro Alfa",
+                 src : "https://cdn.vuetifyjs.com/images/john.jpg",
+             },
+             {
+                 titulo : "Centro Delta",
+                 src : "https://cdn.vuetifyjs.com/images/john.jpg",
+             },
+         ]
+     })
 }
 </script>

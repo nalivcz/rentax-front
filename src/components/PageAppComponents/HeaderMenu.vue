@@ -1,31 +1,76 @@
 <template>
-     <v-app-bar
-      prominent
-      color="white"
-      scroll-target="#scrolling-techniques-7"
-      fixed 
-      elevation="0"
-    >
-        <v-container class="text-center">
-            <v-row justify="center">
-                <img
-                width="220px"
-                src="../../assets/logorentax.jpg"
-                @click="irInicio()"
-                >   
-            </v-row>
-
-            <v-row
-            justify="center"
+    <div class="CircularStd-Black">
+        <div class="text-center hidden-sm-and-down">
+            <v-app-bar
+            prominent
+            color="white"
+            scroll-target="#scrolling-techniques-7"
+            fixed 
+            elevation="0"
             
             >
-            <template v-for="opcion in opciones" v-bind:id="opcion.id">
-                <MenuItemDropDown :key="opcion.id" :descripcion="opcion.descripcion"  :items2="opcion.subMenus" :ruta="opcion.ruta"></MenuItemDropDown>
-            </template>
+            <div style="width:100%">
+            <div class="CircularStd-Black text-center" style="display:flex; flex-direction:column; justify-content:center; margin-top:-30px">
+                <div  style="margin-top:30px;">
+                <div style="dislplay:flex; flex-direction:row; justify-content:center;" class="text-center">
+                    <img
+                    width="220px"
+                    src="../../assets/logorentax.jpg"
+                    @click="irInicio()"
+                    >  
+                </div>   
+                <div style="display:flex; flex-direction:row; justify-content:center">
+                    <template v-for="opcion in opciones" v-bind:id="opcion.id">
+                                <MenuItemDropDown :key="opcion.id" :descripcion="opcion.descripcion"  :items2="opcion.subMenus" :ruta="opcion.ruta"></MenuItemDropDown>
+                    </template>
+                </div>
+                </div>
+            </div>
+            </div>
+            </v-app-bar>
+        </div>
+        <div class="text-center hidden-md-and-up"> 
+            <v-app-bar
+            color="white"
+            scroll-target="#scrolling-techniques-7"
+            fixed 
+            elevation="0"
+            >
             
-            </v-row>
-        </v-container>
-    </v-app-bar>
+            <v-menu
+                
+                :close-on-content-click="false"
+                :nudge-width="200"
+                offset-y
+            >
+                <template v-slot:activator="{ on, attrs }">
+                    <v-app-bar-nav-icon v-bind="attrs" v-on="on"></v-app-bar-nav-icon>
+                </template>
+
+                <v-card >
+                    <div class="CircularStd-Black" style="display:flex; flex-direction:column; padding:10px; ">
+                        <span style="margin-bottom:10px;">MENÚ</span>
+                        <template v-for="opcion in opciones" v-bind:id="opcion.id">
+                            <span :key="opcion.id" @click="navegar(opcion.ruta)">{{opcion.descripcion}}</span>
+                            <div :key="opcion.id" style="padding-left:10px; display:flex; flex-direction:column; padding:10px;">
+                                <template v-for="sub in opcion.subMenus" v-bind:id="opcion.id">
+                                    <span :key="sub.titulo" style="color:green">{{sub.titulo}}</span>
+                                </template>
+                            </div>
+                            <v-divider :key="opcion.id"></v-divider>
+                        </template>
+                    </div>
+                </v-card>
+            </v-menu>
+            <img
+            width="220px"
+            src="../../assets/logorentax.jpg"
+            @click="irInicio()"
+            >   
+            
+            </v-app-bar>
+        </div>
+    </div>
 </template>
 <script>
 import MenuItemDropDown from './MenuItemDropDown'
@@ -48,13 +93,16 @@ export default {
               ruta : 'desarrollos',
               subMenus : [
                   {
-                      titulo : 'Tu casa a la medida '
+                      titulo : 'Tu casa a la medida ',
+                      ruta : 'tuCasaLaMedida'
                   },
                   {
-                      titulo : 'San Agustin 425 Departamentos'
+                      titulo : 'San Agustin 425 Departamentos',
+                      ruta : ''
                   },
                   {
-                      titulo : 'Veranda Los Cabos'
+                      titulo : 'Veranda Los Cabos',
+                      ruta : ''
                   }
               ]
           },
@@ -64,19 +112,24 @@ export default {
               ruta : 'comercialOficinas',
               subMenus : [
                   {
-                      titulo : 'Centro Andrade'
+                      titulo : 'Centro Andrade',
+                      ruta : ''
                   },
                   {
-                      titulo : 'Centro Balcones'
+                      titulo : 'Centro Balcones',
+                      ruta : 'centroBalcones'
                   },
                   {
-                      titulo : 'Centro Alfa'
+                      titulo : 'Centro Alfa',
+                      ruta : ''
                   },
                   {
-                      titulo : 'Centro Delta'
+                      titulo : 'Centro Delta',
+                      ruta : ''
                   },
                   {
-                      titulo : 'Centro 87'
+                      titulo : 'Centro 87',
+                      ruta : ''
                   }
               ]
           },
@@ -86,13 +139,16 @@ export default {
               ruta : 'bienesRaices',
               subMenus : [
                   {
-                      titulo : 'Casas y Departamentos'
+                      titulo : 'Casas y Departamentos',
+                      ruta : ''
                   },
                   {
-                      titulo : 'Áreas Comerciales'
+                      titulo : 'Áreas Comerciales',
+                      ruta : ''
                   },
                   {
-                      titulo : 'Áreas Industriales'
+                      titulo : 'Áreas Industriales',
+                      ruta : ''
                   }
               ]
           },
@@ -116,7 +172,18 @@ export default {
     methods:{
         irInicio:function(){
             this.$router.push('/');
-        }
+        },
+        navegar:function(route){
+            //this.navegar(this.ruta);
+            
+            if(route != "desarrollos"){
+                if (this.$route.path !== this.ruta) this.$router.push('/'+route);
+            }
+            
+        },
     }
 }
 </script>
+<style scoped>
+
+</style>

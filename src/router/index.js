@@ -3,14 +3,23 @@ import VueRouter from 'vue-router'
 import PageApp from '../views/PageApp.vue'
 import Index from '../views/Index.vue'
 import Login from '../views/Login.vue'
-
+import Prueba from '../components/prueba.vue'
 import Nosotros from '../views/nosotros/Nosotros.vue';
 import Comerciosoficinas from '../views/comerciosoficinas/Comerciosoficinas.vue';
 import BienesRaices from '../views/bienesraices/BienesRaices.vue';
 import Contactanos from '../views/contactanos/Contactanos.vue' ;
 import Desarrollos from '../views/desarrollos/Desarrollos.vue'; 
 import Galeria from '../views/galeria/Galeria.vue';
+import CentroBalcones from '../views/desarrollos/CentroBalcones.vue';
 Vue.use(VueRouter)
+
+
+const pathNosotros = '/nosotros';
+const pathComercialOficinas = '/comercialoficinas';
+const pathContactanos = '/contactanos';
+const pathDesarrollos = '/desarrollos';
+const pathBienesRaices = '/bienesraices';
+const pathGaleria = '/galeria';
 
 const routes = [
   {
@@ -24,35 +33,44 @@ const routes = [
     component : PageApp,
     children : [
     {
-      path: '/nosotros',
+      path: pathNosotros,
       component: Nosotros
     },
     {
-      path: '/comercialoficinas',
+      path: pathComercialOficinas,
       component: Comerciosoficinas
     } ,
     {
-      path: '/contactanos',
+      path: pathContactanos,
       component: Contactanos
     } ,
     {
-      path: '/desarrollos',
+      path: pathDesarrollos,
       component: Desarrollos
     }  ,
     {
-      path: '/bienesraices',
+      path: pathBienesRaices,
       component: BienesRaices
     } ,
     {
-      path: '/galeria',
+      path: pathGaleria,
       component: Galeria
-    } 
+    },
+    {
+      path: pathComercialOficinas+'/centrobalcones',
+      component: CentroBalcones
+    }     
   ]
   },
   {
     path: '/login',
     name: 'Login',
     component: Login
+  },
+  {
+    path: '/pruebas',
+    name: 'Prueba',
+    component: Prueba
   }
 ]
 

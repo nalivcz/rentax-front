@@ -1,5 +1,5 @@
 <template>
-<div class="text-center">
+<div >
     <v-menu
       open-on-hover
       offset-y
@@ -27,7 +27,7 @@
             :key="index"
             link
           >
-            <v-list-item-title><span style="color:green"> {{ item.titulo }}</span></v-list-item-title>
+            <v-list-item-title><span style="color:green" @click="navegarSub(item.ruta)">{{ item.titulo }}</span></v-list-item-title>
           </v-list-item>
         </v-list>
       </div>
@@ -36,24 +36,28 @@
 </template>
 
 <script>
-import {mapMutations,mapState} from 'vuex';
   export default {
     name : 'MenuItemDropDown',
     props : { items2 : Array, descripcion :{type : String, required : true } , ruta : String},
     
-    computed:{
-        ...mapState['rutaOpcion']
-    },
+    
     methods : {
-        ...mapMutations['navegar'],
         navegar:function(){
             //this.navegar(this.ruta);
+            if(this.ruta !== "desarrollos"){
+              if (this.$route.path !== this.ruta) this.$router.push('/'+this.ruta);
+            }
             
-            if (this.$route.path !== this.ruta) this.$router.push('/'+this.ruta);
         },
-        verMasFunction:function(){
-
+        navegarSub:function(route){
+          if(route !== ""){
+             var subRuta = this.ruta + '/' + route ; 
+           
+            if (this.$route.path !== subRuta) this.$router.push('/'+subRuta);
+          }
+         
         }
     }
+
   }
 </script>

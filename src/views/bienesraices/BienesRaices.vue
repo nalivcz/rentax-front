@@ -1,84 +1,16 @@
 <template>
-    <div style="background-color : green; padding-bottom : 30px" class="text-center">
-        <div style="margin-top : 20px ;">
-        <span class="text-center" style=" font-size:36px; font-weight: bold; color: white">BIENES RAÍCES</span>
+    <div style="background-color : green; padding-bottom : 30px" class="text-center CircularStd-Book">
+        <div style="">
+        <span class="text-center" style=" font-size:36px; font-weight: bold; color: white; letter-spacing: 5px;">BIENES RAÍCES</span>
         </div>
-        <div style="margin-top:20px; display:flex; justify-content: space-evenly;">
-            <div style="display: flex; flex-direction : column;">
-                <v-avatar size="230" color="black">
-                <img
-                    src="https://cdn.vuetifyjs.com/images/john.jpg"
-                    alt="John"
-                    style="opacity : .5"
-                >
-                <span class="white--text " style="position:absolute; font-size: 24px; font-weigth: bold">Casas y Departamentos</span>
-                </v-avatar>
-                <v-container>
-                    <v-btn
-                    tile
-                    color="#4d4d4f"
-                    style="margin-top:30px;"
-                    outlined
-                    class="white--text "
-                    >
-                    VER MÁS
-                    <v-icon right color="grey">
-                        mdi-play
-                    </v-icon>
-                    </v-btn>
-                </v-container>
-            </div>
-            <div style="display: flex; flex-direction : column;">
-                <v-avatar size="230" color="black">          
-                <img
-                    src="https://cdn.vuetifyjs.com/images/john.jpg"
-                    alt="John"
-                    style="opacity : .5"
-                >
-                <span class="white--text " style="position:absolute; font-size: 24px; font-weigth: bold">Áreas Comerciales</span>
-                </v-avatar>
-                <v-container>
-                    <v-btn
-                    tile
-                    color="#4d4d4f"
-                    style="margin-top:30px;"
-                    outlined
-                    class="white--text "
-                    >
-                    VER MÁS
-                    <v-icon right color="grey">
-                        mdi-play
-                    </v-icon>
-                    </v-btn>
-                </v-container>
-            </div>
-            <div style="display: flex; flex-direction : column;">
-                <v-avatar size="230" color="black">
-                <img
-                    src="https://cdn.vuetifyjs.com/images/john.jpg"
-                    alt="John"
-                    style="opacity : .5"
-                >
-                <span class="white--text " style="position:absolute; font-size: 24px; font-weigth: bold">Áreas Industriales</span>
-                </v-avatar>
-                <v-container>
-                <v-btn
-                tile
-                color="#4d4d4f"
-                style="margin-top:30px;"
-                outlined
-                class="white--text "
-                >
-                VER MÁS
-                <v-icon right color="grey">
-                    mdi-play
-                </v-icon>
-                </v-btn>
-                </v-container>
-            </div>    
+        <center><hr style="background-color:#4d4d4f; width:60px; border: 2px solid #4d4d4f;"></center>
+        <div style="margin-top:20px; display:flex; justify-content: space-evenly;" class="CircularStd-Bold">
+           <template v-for="item in items" v-bind:id="item.titulo">
+                <AvatarDownButton :key="item.titulo" :titulo = item.titulo :srcImagen = item.src ></AvatarDownButton>
+            </template> 
         </div>
-        <div style="margin-top:50px; display: flex; flex-direction : column; justify-context : center" class="text-center">
-            <div><span  style=" font-size:36px; color: white; letter-spacing:16px">Financiando tu proyecto</span></div>
+        <div style="margin-top:50px; display: flex; flex-direction : column; justify-context : center" class="text-center CircularStd-Book">
+            <div><span  style=" font-size:36px; color: white; letter-spacing:16px">FINANCIANDO </span><span style=" font-size:36px; color: white; letter-spacing:16px" class="CircularStd-Bold">TU PROYECTO</span> </div>
             <div style="margin-top:10px"><span style=" font-size:18px; color: white; letter-spacing:2px">Las mejores condiciones de financiamiento</span></div>
             <div style="margin-top:50px">                
                 <v-btn
@@ -96,7 +28,27 @@
     </div>
 </template>
 <script>
+import AvatarDownButton from '../../components/BienesRaicesComponents/AvatarDownButton';
 export default {
-    name : 'BienesRaices'
+    name : 'BienesRaices',
+    components : {
+        AvatarDownButton
+    },
+     data : () => ({
+         items :[
+             {
+                 titulo : "Casas y Departamentos",
+                 src : "https://cdn.vuetifyjs.com/images/john.jpg",
+             },
+             {
+                 titulo : "Áreas Comerciales",
+                 src : "https://cdn.vuetifyjs.com/images/john.jpg",
+             },
+             {
+                 titulo : "Áreas Industriales",
+                 src : "https://cdn.vuetifyjs.com/images/john.jpg",
+             },
+         ]
+     })
 }
 </script>
