@@ -1,10 +1,10 @@
 <template>
-    <div style="display: flex; flex-direction : column;">
-        <div style="background-color : green; padding-top:20px; display:flex; justify-content: flex-start; padding-top:20px">
+    <div style="display: flex; flex-direction : column;" class="CircularStd-Book" >
+        <div :style="{backgroundImage: `url(${require('@/assets/nosotros/fondofilosofia.jpg')})`,  paddingTop:'20px', display:'flex', justifyContent: 'flex-start', paddingTop:'20px'}">
             <div style="margin-top : 50px; padding-bottom:100px ; display:flex;  justify-content: flex-start">
-                <div style="display:flex; flex-direction: column; justify-content : flex-start; background-color: green; padding:30px">
-                    <span  style=" font-size:36px; color: white; letter-spacing:16px">FILOSOFÍA DE</span>
-                    <span  style=" font-size:36px; font-weight: bold; color: white; letter-spacing:16px">LA EPRESA</span>
+                <div style="display:flex; flex-direction: column; justify-content : flex-start;padding-left:130px">
+                    <span  style=" font-size:48px; color: white; letter-spacing:14px">FILOSOFÍA DE</span>
+                    <span class="CircularStd-Bold" style=" font-size:48px; font-weight: bold; color: white; letter-spacing:14px">LA EPRESA</span>
                 </div>
             </div>  
         </div>
@@ -17,14 +17,14 @@
                 </div>
                 <div style="display: flex; flex-direction : row; justify-content: flex-end; flex-grow:2">
                 <img
-                    src="../../assets/ingeniero.png"
+                    src="../../assets/nosotros/ingeniero.png"
                     alt="John"
-                    style=""
+                   
                 >
                 </div>
             </div>    
         </div>
-        <div style="background-color : black; color:white; display:flex; flex-direction : column; padding-top:10px;">
+        <div :style="{backgroundImage: `url(${require('@/assets/nosotros/fondomision.jpg')})`,   display:'flex', flexDirection : 'column', paddingTop:'10px',paddingBottom:'10px'}">
             <div style="display:flex; flex-direction: row ; ">
                  <div style="display:flex; flex-direction: column; justify-content : flex-start; margin-left:200px">
                     <div style="display:flex; flex-direction: column; justify-content : flex-start; width: 300px;">
@@ -58,7 +58,7 @@
                 </div>
             </div>    
         </div>
-        <div style="background-color : #d2d2d2; padding-top:20px; display:flex; flex-direction:column; justify-content: space-evenly; padding-top:20px" class="text-center">
+        <div :style="{backgroundImage: `url(${require('@/assets/nosotros/fondogaleria.jpg')})`, paddingTop:'20px', display:'flex', flexDirection:'column', justifyContent: 'space-evenly', paddingTop:'20px'}" class="text-center">
             <div style="margin-top : 20px ;">
                 <span  style=" font-size:36px; color: #58585a; letter-spacing:6px">¿QUIÉNES SOMOS?</span>
             </div>   
@@ -86,14 +86,20 @@
                 </v-carousel-item>
             </v-carousel>
         </div>
-        <div style="background-color : #2a843a; padding-top:20px; display:flex; flex-direction:column; justify-content: space-evenly; padding-top:20px" class="text-center">
+        <div :style="{backgroundImage: `url(${require('@/assets/nosotros/fondopolitica.png')})`, paddingTop:'40px', display:'flex', flexDirection:'column', justifyContent: 'space-evenly'}" class="text-center">
             <div style="margin-top : 20px ;">
-                <span  style=" font-size:36px; color: white; letter-spacing:16px">POLITÍCA DE PRIVACIDAD</span>
+                <span  style=" font-size:36px; color: white; letter-spacing:8px">POLITÍCA DE PRIVACIDAD</span>
             </div>    
-            <div>
-
+            <div style="margin-bottom:50px; margin-Top:60px;">
+                <v-chip
+                class="ma-2"
+                color="white"
+                text-color="green"
+                style="padding-left:20px; padding-right:20px; padding-top:20px; padding-bottom:20px"
+                >
+                <span style="font-size:24px;">Obtén más información</span>
+                </v-chip>
             </div>
-            
         </div>
     </div>
 </template>
@@ -116,3 +122,6 @@ export default {
     })
 }
 </script>
+<style>
+
+</style>

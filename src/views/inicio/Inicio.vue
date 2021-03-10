@@ -1,23 +1,6 @@
 <template>
-    <div style="" class="text-center CircularStd-Book">
-        <div>
-            <v-carousel>
-                <v-carousel-item
-                v-for="(item,i) in items"
-                :key="i"
-                :src="item.src"
-                reverse-transition="fade-transition"
-                transition="fade-transition"
-                >
-                <div style="display: flex; align-items: center; justify-content: center; padding-top:20px">
-                    <div style="margin-top: 120px;display:flex;  flex-direction : column; padding:30px">
-                        <span  style=" font-size:36px; color: white; letter-spacing:10px">TU HOGAR</span>
-                        <span  style=" font-size:36px; color: GREEN; letter-spacing:10px">JUSTO COMO LO IMAGINAS</span>
-                    </div>  
-                </div>
-                </v-carousel-item>
-            </v-carousel>
-        </div>
+    <div style="" class="CircularStd-Book">
+        <Carrusel></Carrusel>
         <div class="hidden-sm-and-down" style="margin-top:20px; display:flex; justify-content: space-evenly; align-items:baseline ;">
             <div style="display: flex; flex-direction : column; justify-content: center;">
                 <div>
@@ -149,7 +132,9 @@
         <Comerciosoficinas></Comerciosoficinas>
         <BienesRaices></BienesRaices>
         <Galeria></Galeria>
+        <div>
         <Contactanos></Contactanos>    
+        </div>
     </div>
 </template>
 <script>
@@ -157,29 +142,17 @@ import Contactanos from '../contactanos/Contactanos';
 import BienesRaices from '../bienesraices/BienesRaices';
 import Comerciosoficinas from '../comerciosoficinas/Comerciosoficinas';
 import Galeria from '../galeria/Galeria';
+import Carrusel from '../../components/InicioComponents/Carrusel';
 export default {
     name : 'Inicio',
     components:{
         Contactanos,
         BienesRaices,
         Comerciosoficinas,
-        Galeria
+        Galeria,
+        Carrusel
     },
     data : () => ({
-        items: [
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
-          },
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
-          },
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
-          },
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
-          },
-        ],
         oferts: [
           {
             src: 'Financiamiento.jpg',

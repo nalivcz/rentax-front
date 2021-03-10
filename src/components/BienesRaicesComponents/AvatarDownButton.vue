@@ -2,9 +2,9 @@
     <div style="display: flex; flex-direction : column;">
         <v-avatar size="230" color="black">
         <img
-            :src="srcImagen"
+            :src="require(`@/assets/bienesraices/${srcImagen}`)"
             alt="John"
-            style="opacity : .5"
+            style="opacity : .2"
         >
         <span class="white--text " style="position:absolute; font-size: 24px; font-weigth: bold">{{titulo}}</span>
         </v-avatar>

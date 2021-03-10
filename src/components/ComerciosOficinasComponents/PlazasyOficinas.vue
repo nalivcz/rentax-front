@@ -1,8 +1,8 @@
 <template>
     <div style="display: flex; flex-direction : column;">
-        <v-avatar size="230" color="black">
+        <v-avatar size="230" color="#0d6a11">
         <img
-            :src="srcImagen"
+            :src="require(`@/assets/${srcImagen}`)"
             alt="John"
             style="opacity : .5"
         >

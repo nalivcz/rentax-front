@@ -1,5 +1,5 @@
 <template>
-    <div style="background-color : green; padding-bottom : 30px" class="text-center CircularStd-Book">
+    <div style="background-color : green;" class="text-center CircularStd-Book">
         <div style="">
         <span class="text-center" style=" font-size:36px; font-weight: bold; color: white; letter-spacing: 5px;">BIENES RAÍCES</span>
         </div>
@@ -9,21 +9,25 @@
                 <AvatarDownButton :key="item.titulo" :titulo = item.titulo :srcImagen = item.src ></AvatarDownButton>
             </template> 
         </div>
-        <div style="margin-top:50px; display: flex; flex-direction : column; justify-context : center" class="text-center CircularStd-Book">
-            <div><span  style=" font-size:36px; color: white; letter-spacing:16px">FINANCIANDO </span><span style=" font-size:36px; color: white; letter-spacing:16px" class="CircularStd-Bold">TU PROYECTO</span> </div>
-            <div style="margin-top:10px"><span style=" font-size:18px; color: white; letter-spacing:2px">Las mejores condiciones de financiamiento</span></div>
-            <div style="margin-top:50px">                
-                <v-btn
-                tile
-                color = "#4d4d4f"
-                style="margin-top:30px;"
-                class="white--text "
-                >
-                VER MÁS
-                <v-icon right color="green">
-                    mdi-play
-                </v-icon>
-                </v-btn></div>
+        <div style="position:relative;"  class="text-center CircularStd-Book divFinanciando">
+            <img :src="require('@/assets/inicio/financiandoproyecto.jpg')" width="100%" style="background: rgba(76, 175, 80, 0.3)">
+            <div style="position:absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <div><span  style=" font-size:36px; color: white; letter-spacing:16px">FINANCIANDO </span><span style=" font-size:36px; color: white; letter-spacing:16px" class="CircularStd-Bold">TU PROYECTO</span> </div>
+                <div style="margin-top:10px"><span style=" font-size:18px; color: white; letter-spacing:2px">Las mejores condiciones de financiamiento</span></div>
+                <div style="margin-top:50px">                
+                    <v-btn
+                    tile
+                    color = "#4d4d4f"
+                    style="margin-top:30px;"
+                    class="white--text "
+                    >
+                    VER MÁS
+                    <v-icon right color="green">
+                        mdi-play
+                    </v-icon>
+                    </v-btn>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -38,17 +42,26 @@ export default {
          items :[
              {
                  titulo : "Casas y Departamentos",
-                 src : "https://cdn.vuetifyjs.com/images/john.jpg",
+                 src : "casasdepartamentos.png",
              },
              {
                  titulo : "Áreas Comerciales",
-                 src : "https://cdn.vuetifyjs.com/images/john.jpg",
+                 src : "areascomerciales.jpeg",
              },
              {
                  titulo : "Áreas Industriales",
-                 src : "https://cdn.vuetifyjs.com/images/john.jpg",
+                 src : "areasindustriales.png",
              },
          ]
      })
 }
 </script>
+<style>
+.divFinanciando{
+    margin-top:50px; 
+    display: flex; 
+    flex-direction : column; 
+    justify-context : center;
+} 
+
+</style>

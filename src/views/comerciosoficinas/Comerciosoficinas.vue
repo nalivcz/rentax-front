@@ -1,10 +1,10 @@
 <template>
     <div style="display: flex; flex-direction : column;" class="text-center">
-        <div style="background-color : #080808; padding-top:20px; display:flex; flex-direction:column; justify-content: space-evenly; padding-top:20px">
-            <div style="margin-top : 20px ;">
+        <div :style="{backgroundImage: `url(${require('@/assets/comercialoficinas/plazabalcones.jpg')})`, backgroundSize: '100% 100%', display:'flex', flexDirection:'column', justifContent: 'spaceEvenly', paddingTop:'20px', height:'800px', paddingBottom:'200px'}">
+            <div style="margin-top : 60px ;">
                 <span  style=" font-size:36px; color: white; letter-spacing:16px">COMERCIAL</span>
             </div>    
-            <div style="margin-top : 50px; padding-bottom:100px ; display:flex;  justify-content: center">
+            <div style="margin-top : 190px; padding-bottom:100px ; display:flex;  justify-content: center;">
                 <div style="display:flex;  flex-direction : column; background-color: green; padding:30px">
                     <span  style=" font-size:36px; color: white; letter-spacing:16px">PRÓXIMAMENTE</span>
                     <span  style=" font-size:36px; color: white; letter-spacing:16px">CENTRO BALCONES</span>
@@ -37,15 +37,15 @@ export default {
           items :[
              {
                  titulo : "Centro Andrade",
-                 src : "https://cdn.vuetifyjs.com/images/john.jpg",
+                 src : "CentroAndrade.jpg",
              },
              {
                  titulo : "Centro Alfa",
-                 src : "https://cdn.vuetifyjs.com/images/john.jpg",
+                 src : "CentroAlfa.jpg",
              },
              {
                  titulo : "Centro Delta",
-                 src : "https://cdn.vuetifyjs.com/images/john.jpg",
+                 src : "CentroDelta.jpg",
              },
          ]
      })

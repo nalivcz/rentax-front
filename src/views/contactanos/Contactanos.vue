@@ -1,7 +1,7 @@
 <template>
-    <div style="background-color : #297f38;" class="CircularStd-Book" >
+    <div :style="{backgroundImage: `url(${require('@/assets/nosotros/fondopolitica.png')})`, filter: 'grayscale(100%)'}" class="CircularStd-Book" >
         <center><h1 style="color:white; letter-spacing:6px;">CONTÁCTANOS</h1></center>
-        <v-container class="hidden-sm-and-down">
+        <v-container class="hidden-sm-and-down" style="text-align:left;">
             <v-row no-gutters >
             <v-col
                 cols="12"
@@ -34,7 +34,7 @@
                 style="display:flex; flex-direction: column;"
             >
                <span style="color:white ; font-weight : bold; font-size: 18px">Horario</span>
-               <span style="color:white ; font-size: 18px">Lunes a Viernes</span>
+               <span style="color:white ; font-size: 18px;">Lunes a Viernes</span>
                <span style="color:white ; font-size: 18px">9:00 - 18:00</span>
                <hr style="background-color:#3ab14d; width:130px">
                <span style="color:white ; font-size: 18px">Sabados</span>
