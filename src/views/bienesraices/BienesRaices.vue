@@ -1,5 +1,5 @@
 <template>
-    <div style="background-color : green;" class="text-center CircularStd-Book">
+    <div style="background-color : #3ab14d;" class="text-center CircularStd-Book">
         <div style="">
         <span class="text-center" style=" font-size:36px; font-weight: bold; color: white; letter-spacing: 5px;">BIENES RAÍCES</span>
         </div>

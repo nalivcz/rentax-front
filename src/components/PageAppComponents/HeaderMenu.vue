@@ -140,15 +140,15 @@ export default {
               subMenus : [
                   {
                       titulo : 'Casas y Departamentos',
-                      ruta : ''
+                      ruta : 'casasDepartamentos'
                   },
                   {
                       titulo : 'Áreas Comerciales',
-                      ruta : ''
+                      ruta : 'areasComerciales'
                   },
                   {
                       titulo : 'Áreas Industriales',
-                      ruta : ''
+                      ruta : 'areasIndustriales'
                   }
               ]
           },

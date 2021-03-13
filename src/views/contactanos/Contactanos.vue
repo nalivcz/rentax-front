@@ -1,5 +1,5 @@
 <template>
-    <div :style="{backgroundImage: `url(${require('@/assets/nosotros/fondopolitica.png')})`, filter: 'grayscale(100%)'}" class="CircularStd-Book" >
+    <div :style="{backgroundImage: `url(${require('@/assets/nosotros/fondopolitica.png')})`}" class="CircularStd-Book" >
         <center><h1 style="color:white; letter-spacing:6px;">CONTÁCTANOS</h1></center>
         <v-container class="hidden-sm-and-down" style="text-align:left;">
             <v-row no-gutters >

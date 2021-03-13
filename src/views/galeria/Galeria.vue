@@ -2,32 +2,32 @@
     <v-container>
         <center><h1 style="color:green">GALERÍA</h1></center>
         <v-row style="margin-top:20px">
-        <v-col
-        v-for="item in items"
-        :key="item"
-        class="d-flex child-flex"
-        cols="4"
-        >
-        <v-img
-            :src="require(`@/assets/Galeria/${item.srcImage}`)"
-            :lazy-src="require(`@/assets/Galeria/${item.srcImage}`)"
-            aspect-ratio="1"
-            class="grey lighten-2"
-        >
-            <template v-slot:placeholder>
-            <v-row
-                class="fill-height ma-0"
-                align="center"
-                justify="center"
+            <v-col
+            v-for="item in items"
+            :key="item"
+            class="d-flex child-flex"
+            cols="4"
             >
-                <v-progress-circular
-                indeterminate
-                color="grey lighten-5"
-                ></v-progress-circular>
-            </v-row>
-            </template>
-        </v-img>
-        </v-col>
+            <v-img
+                :src="require(`@/assets/Galeria/${item.srcImage}`)"
+                :lazy-src="require(`@/assets/Galeria/${item.srcImage}`)"
+                aspect-ratio="1"
+                class="grey lighten-2"
+            >
+                <template v-slot:placeholder>
+                <v-row
+                    class="fill-height ma-0"
+                    align="center"
+                    justify="center"
+                >
+                    <v-progress-circular
+                    indeterminate
+                    color="grey lighten-5"
+                    ></v-progress-circular>
+                </v-row>
+                </template>
+            </v-img>
+            </v-col>
         </v-row>
         <center>
              <v-btn

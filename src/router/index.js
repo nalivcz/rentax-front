@@ -6,8 +6,9 @@ import Login from '../views/Login.vue'
 import Prueba from '../components/prueba.vue'
 import Nosotros from '../views/nosotros/Nosotros.vue';
 import Comerciosoficinas from '../views/comerciosoficinas/Comerciosoficinas.vue';
+import BienesRaicesIndex from '../views/bienesraices/BienesRaicesIndex.vue';
 import BienesRaices from '../views/bienesraices/BienesRaices.vue';
-import Contactanos from '../views/contactanos/Contactanos.vue' ;
+import ContactanosIndex from '../views/contactanos/ContactanosIndex.vue' ;
 import Desarrollos from '../views/desarrollos/Desarrollos.vue'; 
 import Galeria from '../views/galeria/Galeria.vue';
 import CentroBalcones from '../views/desarrollos/CentroBalcones.vue';
@@ -43,7 +44,7 @@ const routes = [
     } ,
     {
       path: pathContactanos,
-      component: Contactanos
+      component: ContactanosIndex
     } ,
     {
       path: pathDesarrollos,
@@ -54,8 +55,15 @@ const routes = [
       component: TuCasaMedida
     },
     {
-      path: pathBienesRaices,
+      path: pathBienesRaices ,
       component: BienesRaices
+    } ,
+    {
+      path: pathBienesRaices + '/:seccion',
+      component: BienesRaicesIndex,
+      props(route){
+        return {rutaRouter :  route.params.seccion}
+      }
     } ,
     {
       path: pathGaleria,
