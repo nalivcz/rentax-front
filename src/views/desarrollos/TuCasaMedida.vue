@@ -72,55 +72,13 @@
                 </v-container>
             </div>
         </div>
-         <div style="background-color:#f2f2f2; display: flex; flex-direction : column; align-items:center; padding-top:30px;" class="text-center">
-            <div style="background-color: #3ab14d; color:white; padding-left:20px; padding-right:20px; padding-top:5px;  padding-bottom:5px;">
-                <span style="font-size: 24px; letter-spacing:4px;" class="CircularStd-Book">PROYECTOS ENTREGADOS</span>
+        <div style="background-color: #3ab14d; color:white; display: flex; flex-direction : column; align-items:center; padding-top:30px;" class="text-center">
+            <div style="background-color: #3ab14d; color:white; width:30%; padding-left:20px; padding-right:20px; padding-top:5px;  padding-bottom:5px;">
+                <span style="font-size: 24px; letter-spacing:4px;" class="CircularStd-Black">CONSTRUYE TU CASA A LA MEDIDA CON</span>
             </div> 
+            <img src="../../assets/rentaxYourHome.png" width="150">
             <div style="padding:20px;">
-                <v-container>
-                    <v-row style="margin-top:20px">
-                        <v-col
-                        v-for="item in items"
-                        :key="item"
-                        class="d-flex child-flex"
-                        cols="2"
-                        >
-                        <v-img
-                            :src="require(`@/assets/Galeria/${item.srcImage}`)"
-                            :lazy-src="require(`@/assets/Galeria/${item.srcImage}`)"
-                            aspect-ratio="1"
-                            class="grey lighten-2"
-                        >
-                            <template v-slot:placeholder>
-                            <v-row
-                                class="fill-height ma-0"
-                                align="center"
-                                justify="center"
-                            >
-                                <v-progress-circular
-                                indeterminate
-                                color="grey lighten-5"
-                                ></v-progress-circular>
-                            </v-row>
-                            </template>
-                        </v-img>
-                        </v-col>
-                    </v-row>
-                    <center>
-                        <v-btn
-                        tile
-                        color="#4d4d4f"
-                        style="margin-top:30px;"
-                        class="white--text "
-                        @click="verMas"
-                        >
-                        {{btnMsg}}
-                        <v-icon right color="success">
-                            mdi-play
-                        </v-icon>
-                        </v-btn>
-                    </center>
-                </v-container>
+                
             </div>
         </div>
     </div>
