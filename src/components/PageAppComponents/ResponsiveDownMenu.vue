@@ -93,7 +93,7 @@ export default {
           },
           {
               id: 6,
-              descripcion : 'CONTÁCTANOS',
+              descripcion : 'CONTÁCTANOSS',
               ruta : 'contactanos',
               subMenus : [    
               ]

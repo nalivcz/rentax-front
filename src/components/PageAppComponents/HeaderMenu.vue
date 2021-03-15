@@ -54,7 +54,7 @@
                             <span :key="opcion.id" @click="navegar(opcion.ruta)">{{opcion.descripcion}}</span>
                             <div :key="opcion.id" style="padding-left:10px; display:flex; flex-direction:column; padding:10px;">
                                 <template v-for="sub in opcion.subMenus" v-bind:id="opcion.id">
-                                    <span :key="sub.titulo" style="color:green">{{sub.titulo}}</span>
+                                    <span :key="sub.titulo" @click="navegarSub(sub.ruta, opcion.ruta)" style="color:green">{{sub.titulo}}</span>
                                 </template>
                             </div>
                             <v-divider :key="opcion.id"></v-divider>
@@ -181,6 +181,15 @@ export default {
             }
             
         },
+        navegarSub:function(route,mainRoute){
+            var rutaIr = mainRoute + '/' + route ; 
+            if(route !== ""){
+                //var subRuta = this.ruta + '/' + route ; 
+           
+            if (this.$route.path !== rutaIr) this.$router.push('/'+rutaIr);
+            }
+         
+        }
     }
 }
 </script>
