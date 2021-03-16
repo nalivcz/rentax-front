@@ -21,6 +21,14 @@
             </div>
             
         </div>
+        <div style="background-color:white; display: flex; flex-direction : column; align-items:center; padding-top:20px;">
+            <div>
+                <video width="320" height="240" controls>
+                <source src="https://www.youtube.com/watch?v=P8rmjEmpZ2M" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
         <div style="background-color:#f2f2f2; display: flex; flex-direction : column; align-items:center; padding-top:30px;" class="text-center">
             <div style="background-color: #3ab14d; color:white; padding-left:20px; padding-right:20px; padding-top:5px;  padding-bottom:5px;">
                 <span style="font-size: 24px; letter-spacing:4px;" class="CircularStd-Book">PROYECTOS ENTREGADOS</span>
