@@ -66,69 +66,7 @@
                 </v-carousel-item>
             </v-carousel>
         </div>
-        <div class="hidden-sm-and-down" style="margin-top:20px; padding-bottom:40px;  padding-top:40px; background-color:green; display:flex; justify-content: center; align-items:baseline ;">
-            <div style="display: flex; flex-direction : column; justify-content: center;">
-                <div>
-                <v-avatar size="230" color="black">
-                <img
-                    src="https://cdn.vuetifyjs.com/images/john.jpg"
-                    alt="John"
-                    style="opacity : .5"
-                >
-                </v-avatar>
-                </div>
-                <div style="text-align:center; display: flex; flex-direction : column; padding-left:20px; padding-right:20px; margin-top:30px">
-                    <div style="text-align:center; color:white;">"Lo mejor de trabajar con Rentax, fue su sistema Construye Tu Hogar. Rapido, efectivo y se adapto a nuestras necesidades"</div>
-                    <span style="color:white; font-size: 24px; font-weigth: bold">Juan Garcia, San Anselmo</span>
-                </div>
-            </div>
-            <div style="display: flex; flex-direction : column; justify-content: center;">
-                <div>
-                <v-avatar size="230" color="black">
-                <img
-                    src="https://cdn.vuetifyjs.com/images/john.jpg"
-                    alt="John"
-                    style="opacity : .5"
-                >
-                </v-avatar>
-                </div>
-                <div style="text-align:center;  display: flex; flex-direction : column; padding-left:20px; padding-right:20px; margin-top:30px">
-                    <div style="text-align:center; color:white;">"Lo mejor de trabajar con Rentax, fue su sistema Construye Tu Hogar. Rapido, efectivo y se adapto a nuestras necesidades"</div>
-                    <span style="color:white; font-size: 24px; font-weigth: bold">Juan Garcia, San Anselmo</span>
-                </div>
-            </div>
-        </div>
-        <div class="hidden-md-and-up" style="padding-bottom:40px;  padding-top:40px; background-color:green; display:flex; justify-content: center; align-items:baseline ;">
-            <v-carousel>
-                <v-carousel-item
-                v-for="(item,i) in opiniones"
-                :key="i"
-                reverse-transition="fade-transition"
-                transition="fade-transition"
-                >
-                <div style="display: flex; align-items: center; justify-content: center;">
-                    <div style="margin-top:60px;display:flex;  flex-direction : column; justify-content: center; ">
-                        <div style="display: flex; flex-direction:column; column; justify-content: center;">
-                            <center>
-                            <v-avatar size="230" color="white" >
-                            <img
-                            :src="require(`@/assets/${item.src}`)"
-                                alt="John"
-                            >
-                            </v-avatar>
-                            </center>
-                        </div>
-                        <center>
-                        <div style="display: flex; flex-direction:column; column; justify-content: center; width: 50%;">
-                            <span  style=" font-size:16px; color: white;">{{item.comentario}}</span>    
-                            <span  style=" font-size:16px; color: white;">{{item.nombre}}</span>
-                        </div>
-                        </center>
-                    </div>  
-                </div>
-                </v-carousel-item>
-            </v-carousel>
-        </div>
+        <Opiniones></Opiniones>
         <Comerciosoficinas></Comerciosoficinas>
         <BienesRaices></BienesRaices>
         <Galeria></Galeria>
@@ -143,6 +81,7 @@ import BienesRaices from '../bienesraices/BienesRaices';
 import Comerciosoficinas from '../comerciosoficinas/Comerciosoficinas';
 import Galeria from '../galeria/Galeria';
 import Carrusel from '../../components/InicioComponents/Carrusel';
+import Opiniones from '../../components/InicioComponents/Opiniones'; 
 export default {
     name : 'Inicio',
     components:{
@@ -150,7 +89,8 @@ export default {
         BienesRaices,
         Comerciosoficinas,
         Galeria,
-        Carrusel
+        Carrusel,
+        Opiniones
     },
     data : () => ({
         oferts: [
