@@ -1,12 +1,44 @@
 <template>
     <v-container>
-        <center><h1 style="color:green">GALERÍA</h1></center>
-        <v-row style="margin-top:20px">
+        <center><h1 style="color:#3ab14d; letter-spacing:5px;" class="CircularStd-Book">GALERÍA</h1></center>
+        <div style="margin-top:10px;" class="text-center">
+            <span class="hidden-sm-and-down"  style=" font-size:24px; background-color:#3ab14d; color: white; letter-spacing:8px; padding:8px;">PROYECTOS ENTREGADOS</span>
+            <span class="hidden-md-and-up"  style=" font-size:16px; background-color:#3ab14d; color: white; letter-spacing:4px; padding:2px;">PROYECTOS ENTREGADOS</span>
+        </div>
+        <v-row style="margin-top:20px" class="hidden-sm-and-down">
             <v-col
             v-for="item in items"
             :key="item"
             class="d-flex child-flex"
             cols="4"
+            >
+            <v-img
+                :src="require(`@/assets/Galeria/${item.srcImage}`)"
+                :lazy-src="require(`@/assets/Galeria/${item.srcImage}`)"
+                aspect-ratio="1"
+                class="grey lighten-2"
+            >
+                <template v-slot:placeholder>
+                <v-row
+                    class="fill-height ma-0"
+                    align="center"
+                    justify="center"
+                >
+                    <v-progress-circular
+                    indeterminate
+                    color="grey lighten-5"
+                    ></v-progress-circular>
+                </v-row>
+                </template>
+            </v-img>
+            </v-col>
+        </v-row>
+        <v-row style="margin-top:20px" class="hidden-md-and-up">
+            <v-col
+            v-for="item in items"
+            :key="item"
+            class="d-flex child-flex"
+            cols="12"
             >
             <v-img
                 :src="require(`@/assets/Galeria/${item.srcImage}`)"

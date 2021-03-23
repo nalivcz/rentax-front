@@ -267,13 +267,13 @@ export default {
             this.flag = true ; 
           }else{
               this.items = [
-            {srcImage : '01.jpg'},
-            {srcImage : '02.jpg'},
-            {srcImage : '03.jpg'},
-            {srcImage : '04.jpg'},
-            {srcImage : '05.jpg'},
-            {srcImage : '06.jpg'}
-            ];
+                {srcImage : '01.jpg'},
+                {srcImage : '02.jpg'},
+                {srcImage : '03.jpg'},
+                {srcImage : '04.jpg'},
+                {srcImage : '05.jpg'},
+                {srcImage : '06.jpg'}
+              ];
               this.btnMsg = 'VER MÁS';
               this.flag = false ; 
           }
