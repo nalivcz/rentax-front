@@ -1,10 +1,10 @@
 <template>
-    <div style="background-color:#f2f2f2; padding:5%;" class="text-center">
-		<span style="font-size:36px; color:#56555a;" class="CircularStd-Black">NIVEL 1</span>
+    <div style="background-color:#f2f2f2; padding-left:5%; padding-right:5%; padding-bottom:2%" class="text-center">
+		<span style="font-size:36px; color:#56555a;" class="CircularStd-Black">{{titulo}}</span>
 		<div style="display:flex; flex-direction : row;justify-content: space-between; ">
 			<div style="width:50%; display:flex; flex-direction:column; align-items:center;" >
 				<div>
-				<img src="../../assets/comercialoficinas/centrobalcones/imagenes/Planos/planonivel1.jpg" style="margin-left:10%;" width="85%">
+				<img :src="require(`@/assets/comercialoficinas/centrobalcones/imagenes/planos/${srcImagen}`)" style="margin-left:10%;" width="85%">
 				<div style="font-size:24px; color:#d70a48; width:55%; text-align:left; margin-left:20%; padding:10px; line-height:30px;" class="CircularStd-Book">Precio de renta por m<sup>2</sup> en NIVEL 1: $230</div>
 				</div>
 			</div>
@@ -12,50 +12,18 @@
 				<div style="display:flex; flex-direction:column;">
 					<table border="3" class="CircularStd-Bold" >
 						<thead style="background-color :#d70a48; color:white;">
-						<th style="padding-left: 25px; padding-right: 25px;">NIVEL 1</th>
+						<th style="padding-left: 25px; padding-right: 25px;">{{titulo}}</th>
 						<th style="padding-left: 50px; padding-right: 50px;">ÁREA</th>
 						</thead>
 						<tbody>
-							<tr>
-								<td>LOCAL 1</td>
-								<td>46.50 m<sup>2</sup></td>
-							</tr>
-							<tr>
-								<td>LOCAL 2</td>
-								<td>46.50 m<sup>2</sup></td>
-							</tr>
-							<tr>
-								<td>LOCAL 3</td>
-								<td>46.50 m<sup>2</sup></td>
-							</tr>
-							<tr>
-								<td>LOCAL 4</td>
-								<td>40.00 m<sup>2</sup></td>
-							</tr>
-							<tr>
-								<td>LOCAL 5</td>
-								<td>40.00 m<sup>2</sup></td>
-							</tr>
-							<tr>
-								<td>LOCAL 6</td>
-								<td>52.50 m<sup>2</sup></td>
-							</tr>
-							<tr>
-								<td>LOCAL 7</td>
-								<td>53.50 m<sup>2</sup></td>
-							</tr>
-							<tr>
-								<td>LOCAL 8</td>
-								<td>55.00 m<sup>2</sup></td>
-							</tr>
-							<tr>
-								<td>LOCAL 9</td>
-								<td>57.00 m<sup>2</sup></td>
+							<tr v-for="pizo in areaPorPizo" :key="pizo.id">
+								<td>{{pizo.descripcion}}</td>
+								<td>{{pizo.medida}}</td>
 							</tr>
 						</tbody>
 						<tfoot style="background-color :#414046; color:white;">
 						<th>TOTAL</th>
-						<th>466.00 m<sup>2</sup></th>
+						<th>{{totalArea}} m<sup>2</sup></th>
 						</tfoot>
 					</table>
 					<div style="display:flex; flex-direction:row; margin-top:20px; align-items:baseline;">
@@ -85,3 +53,15 @@
 		<hr style=" margin-left:5%; margin-right:5%; margin-top:5%; border-top: 5px dashed gray;">
 	</div>
 </template>
+<script>
+
+export default {
+    name : 'Nivel',
+	props : {
+		titulo : String,
+		srcImagen : String ,
+		totalArea : String , 
+		areaPorPizo : Array
+	}
+}
+</script>
