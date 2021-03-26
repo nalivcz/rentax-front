@@ -1,26 +1,30 @@
 <template>
     <div style="display: flex; flex-direction : column;">
-        <v-avatar size="230" color="#0d6a11">
+        <center>
+        <v-avatar :size="tamañoIcono" color="#0d6a11">
         <img
             :src="require(`@/assets/${srcImagen}`)"
             alt="John"
             style="opacity : .5"
         >
-        <span class="white--text CircularStd-Bold" style="position:absolute; font-size: 24px; width:50%;">{{titulo}}</span>
+        <span class="white--text CircularStd-Bold" style="position:absolute; font-size: 18px; width:50%;">{{titulo}}</span>
         </v-avatar>
-        <v-container>
+        </center>
+        <v-container >
+            <center>
             <v-btn
             tile
             color="#4d4d4f"
             style="margin-top:30px;"
             
-            class="white--text "
+            class="white--text"
             >
             VER MÁS
             <v-icon right color="green">
                 mdi-play
             </v-icon>
             </v-btn>
+            </center>
         </v-container>
     </div>
 </template>
@@ -31,7 +35,7 @@ export default {
     props : {
         srcImagen : String, 
         titulo : String , 
-
+        tamañoIcono : Number
     }
 }
 </script>
