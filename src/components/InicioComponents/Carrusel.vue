@@ -9,7 +9,7 @@
             transition="fade-transition"
             style=""
             >
-            <div class="hidden-sm-and-down" style="display: flex-direction; align-items: center; justify-content: center; padding-top:20px; filter: alpha(opacity=100);" >
+            <div class="hidden-sm-and-down" style="display: flex-direction; align-items: center; justify-content: center; padding-top:20px;" >
                 <div style="margin-top: 120px;display:flex;  flex-direction : column; padding:30px">
                     <span  style=" font-size:36px; color: white; letter-spacing:10px">{{item.titulo}}</span>
                     <span  style=" font-size:36px; color: GREEN; letter-spacing:10px">{{item.subtitulo}}</span>

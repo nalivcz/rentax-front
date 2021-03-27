@@ -57,12 +57,14 @@
                 reverse-transition="fade-transition"
                 transition="fade-transition"
                 >
-                <div style="display: flex; flex-direction:row; align-items:flex-end;">
-                    <div style="display:flex;  flex-direction : column; align-items:flex-start; padding-left:30px; margin-top:300px;">
-                        <span  style=" font-size:24px; color: white; letter-spacing:8px; background-color:green; padding-left:10px; padding-right:5px;">{{item.titulo}}</span>
-                        <span  style=" font-size:16px; color: white; width:50%; text-align:left; ">{{item.subtitulo}}</span>
-                    </div>  
-                </div>
+                    <v-container class="hidden-md-and-up" style="display: flex; flex-direction: column; justify-content: flex-end; height:100%; padding-bottom:15%;">
+                        <div style="display:flex; flex-direction:column; text-align:justify; width:90%; padding-left:10%;">
+                            <div style="display:flex; flex-direction:row;">
+                                <span style=" font-size:14px; color: white; letter-spacing:2px; background-color:#3ab14d; padding:5px;" class="CircularStd-Bold">{{item.titulo}}</span>
+                            </div>
+                            <span style=" font-size:14px; color: white; letter-spacing:5px; margin-top:10px;" class="CircularStd-Book" >{{item.subtitulo}}</span>  
+                        </div>   
+                    </v-container>   
                 </v-carousel-item>
             </v-carousel>
         </div>
