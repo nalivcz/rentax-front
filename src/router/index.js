@@ -67,7 +67,10 @@ const routes = [
     } ,
     {
       path: pathGaleria,
-      component: Galeria
+      component: Galeria,
+      props(){
+        return {origen :  1}
+      }
     },
     {
       path: pathComercialOficinas+'/centrobalcones',

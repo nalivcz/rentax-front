@@ -60,7 +60,7 @@
                     <v-container class="hidden-md-and-up" style="display: flex; flex-direction: column; justify-content: flex-end; height:100%; padding-bottom:15%;">
                         <div style="display:flex; flex-direction:column; text-align:justify; width:90%; padding-left:10%;">
                             <div style="display:flex; flex-direction:row;">
-                                <span style=" font-size:14px; color: white; letter-spacing:2px; background-color:#3ab14d; padding:5px;" class="CircularStd-Bold">{{item.titulo}}</span>
+                                <span style=" font-size:14px; color: white; letter-spacing:1px; background-color:#3ab14d; padding:5px;" class="CircularStd-Bold">{{item.titulo}}</span>
                             </div>
                             <span style=" font-size:14px; color: white; letter-spacing:5px; margin-top:10px;" class="CircularStd-Book" >{{item.subtitulo}}</span>  
                         </div>   
@@ -71,7 +71,7 @@
         <Opiniones></Opiniones>
         <Comerciosoficinas></Comerciosoficinas>
         <BienesRaices></BienesRaices>
-        <Galeria></Galeria>
+        <Galeria :origen=2></Galeria>
         <div>
         <Contactanos></Contactanos>    
         </div>

@@ -35,8 +35,7 @@
                 <div style="display:flex; flex-direction:column; text-align:justify; width:90%; padding-left:10%;">
                     <span style=" font-size:24px; color: white; letter-spacing:5px" class="CircularStd-Book">{{item.titulo}}</span>
                     <span style=" font-size:24px; color: white; letter-spacing:5px" class="CircularStd-Bold" >{{item.subtitulo}}</span>  
-                </div>
-                   
+                </div>   
             </v-container> 
             </v-carousel-item>
         </v-carousel>

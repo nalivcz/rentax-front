@@ -1,7 +1,8 @@
 <template>
-    <div style="background-color : #3ab14d;" class="text-center CircularStd-Book">
+<v-app>
+    <div style="background-color : #3ab14d;" class="text-center CircularStd-Book hidden-sm-and-down">
         <div style="">
-        <span class="text-center" style=" font-size:36px; font-weight: bold; color: white; letter-spacing: 5px;">BIENES RAÍCES</span>
+            <span class="text-center" style=" font-size:36px; font-weight: bold; color: white; letter-spacing: 5px;">BIENES RAÍCES</span>
         </div>
         <center><hr style="background-color:#4d4d4f; width:60px; border: 2px solid #4d4d4f;"></center>
         <div style="margin-top:20px; display:flex; justify-content: space-evenly;" class="CircularStd-Bold">
@@ -9,10 +10,12 @@
                 <AvatarDownButton :key="item.titulo" :titulo = item.titulo :srcImagen = item.src ></AvatarDownButton>
             </template> 
         </div>
-        <div style="position:relative;"  class="text-center CircularStd-Book divFinanciando">
-            <img :src="require('@/assets/inicio/financiandoproyecto.jpg')" width="100%" style="background: rgba(76, 175, 80, 0.3)">
-            <div style="position:absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-                <div><span  style=" font-size:36px; color: white; letter-spacing:16px">FINANCIANDO </span><span style=" font-size:36px; color: white; letter-spacing:16px" class="CircularStd-Bold">TU PROYECTO</span> </div>
+        <div class="text-center CircularStd-Book divFinanciando" :style="{backgroundImage: `url(${require('@/assets/inicio/financiandoproyecto.jpg')})`, backgroundSize: '100% 100%', height : '350px'}">
+            <div>
+                <div>
+                    <span  style=" font-size:36px; color: white; letter-spacing:16px">FINANCIANDO </span>
+                    <span style=" font-size:36px; color: white; letter-spacing:16px" class="CircularStd-Bold">TU PROYECTO</span> 
+                </div>
                 <div style="margin-top:10px"><span style=" font-size:18px; color: white; letter-spacing:2px">Las mejores condiciones de financiamiento</span></div>
                 <div style="margin-top:50px">                
                     <v-btn
@@ -30,13 +33,49 @@
             </div>
         </div>
     </div>
+    <div style="background-color : #e2e2e4;" class="text-center CircularStd-Book hidden-md-and-up">
+        <div style=" margin-top:10px;">
+            <span class="text-center" style=" font-size:24px; font-weight: bold; color: #4d4d4f; letter-spacing: 5px;">BIENES RAÍCES</span>
+        </div>
+        <center><hr style="background-color:#3ab14d; width:50px; border: 2px solid #3ab14d; margin-top:20px;"></center>
+        <div style="margin-top:20px; display:flex; flex-direction:column;" class="CircularStd-Bold">
+           <template v-for="item in items" v-bind:id="item.titulo">
+                <BienesResponsive :key="item.titulo" :titulo = item.titulo :srcImagen = item.src ></BienesResponsive>
+            </template> 
+        </div>
+        <div class="text-center CircularStd-Book divFinanciando" :style="{backgroundImage: `url(${require('@/assets/inicio/financiandoproyecto.jpg')})`, backgroundSize: '100% 100%', height : '280px', marginTop:'10px'}">
+            <div>
+                <div style="display:flex; flex-direction:column">
+                    <span  style=" font-size:24px; color: white; letter-spacing:1px" class="CircularStd-Bold">FINANCIANDO </span>
+                    <span style=" font-size:24px; color: white; letter-spacing:1px" class="CircularStd-Bold">TU PROYECTO</span> 
+                </div>
+                <div style="margin-top:10px"><span style=" font-size:18px; color: white; letter-spacing:2px">Las mejores condiciones de financiamiento</span></div>
+                <div style="margin-top:10px">                
+                    <v-btn
+                    tile
+                    color = "#4d4d4f"
+                    style="margin-top:30px;"
+                    class="white--text "
+                    >
+                    VER MÁS
+                    <v-icon right color="green">
+                        mdi-play
+                    </v-icon>
+                    </v-btn>
+                </div>
+            </div>
+        </div>
+    </div>
+</v-app>
 </template>
 <script>
 import AvatarDownButton from '../../components/BienesRaicesComponents/AvatarDownButton';
+import BienesResponsive from '../../components/BienesRaicesComponents/BienesResponsive';
 export default {
     name : 'BienesRaices',
     components : {
-        AvatarDownButton
+        AvatarDownButton,
+        BienesResponsive
     },
      data : () => ({
          items :[
@@ -58,10 +97,10 @@ export default {
 </script>
 <style>
 .divFinanciando{
-    margin-top:50px; 
+
     display: flex; 
     flex-direction : column; 
-    justify-context : center;
+    justify-content: center;
 } 
 
 </style>
