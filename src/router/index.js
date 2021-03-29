@@ -13,6 +13,7 @@ import Desarrollos from '../views/desarrollos/Desarrollos.vue';
 import Galeria from '../views/galeria/Galeria.vue';
 import CentroBalcones from '../views/desarrollos/CentroBalcones.vue';
 import TuCasaMedida from '../views/desarrollos/TuCasaMedida.vue';
+import Financiando from '../views/financiando/Financiando.vue'
 Vue.use(VueRouter)
 
 
@@ -22,6 +23,7 @@ const pathContactanos = '/contactanos';
 const pathDesarrollos = '/desarrollos';
 const pathBienesRaices = '/bienesraices';
 const pathGaleria = '/galeria';
+const pathFinanciando = '/financiandoTuProyecto';
 
 const routes = [
   {
@@ -49,6 +51,10 @@ const routes = [
     {
       path: pathDesarrollos,
       component: Desarrollos
+    }  ,
+        {
+      path: pathFinanciando,
+      component: Financiando
     }  ,
     {
       path: pathDesarrollos + '/tuCasaLaMedida',

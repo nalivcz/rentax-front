@@ -23,6 +23,7 @@
                     color = "#4d4d4f"
                     style="margin-top:30px;"
                     class="white--text "
+                    @click="navegar()"
                     >
                     VER MÁS
                     <v-icon right color="green">
@@ -56,6 +57,7 @@
                     color = "#4d4d4f"
                     style="margin-top:30px;"
                     class="white--text "
+                    @click="navegar()"
                     >
                     VER MÁS
                     <v-icon right color="green">
@@ -92,7 +94,12 @@ export default {
                  src : "areasindustriales.png",
              },
          ]
-     })
+     }),
+     methods : {
+         navegar:function(){
+            this.$router.push('/financiandoTuProyecto');
+        },
+     }
 }
 </script>
 <style>
