@@ -11,35 +11,52 @@
                     </div>
                 </div>
         </div>
-        <div style="display: flex; flex-direction: column; justify-content: center; padding-left :20%; padding-right :20%; padding-top: 2%;">
-                <div style="">De la mano de <span style="color:green" class="CircularStd-Bold">Rentax</span>, las familias que han buscado financiamiento para construir su hogar han sido casos de éxito y se les ha ayudado a resolver cualquier detalle con el <span class="CircularStd-BookItalic">Buro de Crédito</span>. Con el Crédito de Construcción que se utiliza para <span class="CircularStd-Bold">Your Home</span>(construir tu casa a la medida), el banco te puede prestar hasta el 50% para comprar el terreno o hasta el 70% para la construcción, tasas de interes del 7.75% y plazos de hasta 20 años.   </div>
-                <div style="display: flex; flex-direction: row; justify-content: center;">
-                    <img :src="require(`@/assets/financiando/logos/socasesoreshipotecarios.png`)"
-                    width="250px"
-                    height="100px">  
+        <div style="display: flex; flex-direction: column; justify-content: center; padding-left :20%; padding-right :20%; padding-top: 2%; padding-bottom:5%">
+            
+            <div style="text-align:justify;">De la mano de <span style="color:green" class="CircularStd-Bold">Rent.10ax</span>, las familias que han buscado financiamiento para construir su hogar han sido casos de éxito y se les ha ayudado a resolver cualquier detalle con el <span class="CircularStd-BookItalic">Buro de Crédito</span>. Con el Crédito de Construcción que se utiliza para <span class="CircularStd-Bold">Your Home</span>(construir tu casa a la medida), el banco te puede prestar hasta el 50% para comprar el terreno o hasta el 70% para la construcción, tasas de interes del 7.75% y plazos de hasta 20 años.   </div>
+            <div class="CircularStd-Bold" style="display: flex; flex-direction: row; justify-content: center; padding-top:2%;  padding-bottom:2%;">
+                <v-chip
+                class="ma-2"
+                style="width:60%; height:50px;"
+                color="#f5f6f8"
+                >
+                <v-icon right color="#3ab14d" x-large>
+                    mdi-whatsapp
+                </v-icon>
+                <div style="display:flex; flex-direction: column; font-size:24px; color:#4d4d4f">
+                    <span style="margin-left:10px;" class="CircularStd-Book">Contáctanos para más información</span>
+                    <span style="margin-left:15px;" class="CircularStd-Book"> y haz tu sueño realidad</span>
                 </div>
-                <div class="CircularStd-Bold" style="display: flex; flex-direction: row; justify-content: center; margin-top:20px; background-color: #3ab14d; color:white; font-size : 22px; letter-spacing:2px; padding-top:2%;  padding-bottom:2%;">
-                    CONOCE NUESTROS PROYECTOS ENTREGADOS
-                </div>
-                <div style="margin-top:10px;">
-                    <v-row>
-                        <v-col
-                        v-for="item in items"
-                        :key="item"
-                        class="d-flex child-flex"
-                        cols="2"
-                        >
-                        <img
-                            :src="require(`@/assets/financiando/logos/${item.srcImage}`)"
-                            :lazy-src="require(`@/assets/financiando/logos/${item.srcImage}`)"
-                            aspect-ratio="1"
-                            width="100%"
-                            class="grey lighten-2"
-                        >
-                        
-                        </v-col>
-                    </v-row>
-                </div>
+                
+                </v-chip>
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: center; margin-top : 5%">
+                <img :src="require(`@/assets/financiando/logos/socasesoreshipotecarios.png`)"
+                width="250px"
+                height="100px">  
+            </div>
+            <div class="CircularStd-Bold" style="display: flex; flex-direction: row; justify-content: center; margin-top:20px; background-color: #3ab14d; color:white; font-size : 22px; letter-spacing:2px; padding-top:2%;  padding-bottom:2%;">
+                CONOCE NUESTROS PROYECTOS ENTREGADOS
+            </div>
+            <div style="margin-top:10px;">
+                <v-row>
+                    <v-col
+                    v-for="item in items"
+                    :key="item"
+                    class="d-flex child-flex"
+                    cols="2"
+                    >
+                    <img
+                        :src="require(`@/assets/financiando/logos/${item.srcImage}`)"
+                        :lazy-src="require(`@/assets/financiando/logos/${item.srcImage}`)"
+                        aspect-ratio="1"
+                        width="100%"
+                        class="grey lighten-2"
+                    >
+                    
+                    </v-col>
+                </v-row>
+            </div>
         </div>
       </div>
       <div class="hidden-md-and-up">
@@ -55,7 +72,23 @@
                         </div>
                     </div> 
                     <div style="display: flex; flex-direction: column; justify-content: center; padding-left :10%; padding-right :10%; padding-top: 2%; margin-top:5%;">
-                        <div style="">De la mano de <span style="color:green" class="CircularStd-Bold">Rentax</span>, las familias que han buscado financiamiento para construir su hogar han sido casos de éxito y se les ha ayudado a resolver cualquier detalle con el <span class="CircularStd-BookItalic">Buro de Crédito</span>. Con el Crédito de Construcción que se utiliza para <span class="CircularStd-Bold">Your Home</span>(construir tu casa a la medida), el banco te puede prestar hasta el 50% para comprar el terreno o hasta el 70% para la construcción, tasas de interes del 7.75% y plazos de hasta 20 años.   </div>
+                        <div style="text-align:justify; line-height:18px;">De la mano de <span style="color:green" class="CircularStd-Bold">Rentax</span>, las familias que han buscado financiamiento para construir su hogar han sido casos de éxito y se les ha ayudado a resolver cualquier detalle con el <span class="CircularStd-BookItalic">Buro de Crédito</span>. Con el Crédito de Construcción que se utiliza para <span class="CircularStd-Bold">Your Home</span>(construir tu casa a la medida), el banco te puede prestar hasta el 50% para comprar el terreno o hasta el 70% para la construcción, tasas de interes del 7.75% y plazos de hasta 20 años.   </div>
+                        <div class="CircularStd-Bold" style="display: flex; flex-direction: row; justify-content: center; padding-top:2%;  padding-bottom:2%;">
+                            <v-chip
+                            class="ma-2"
+                            style="width:100%; height:50px;"
+                            color="#f5f6f8"
+                            >
+                            <v-icon right color="#3ab14d" x-large>
+                                mdi-whatsapp
+                            </v-icon>
+                            <div style="display:flex; flex-direction: column; font-size:13px; color:#4d4d4f">
+                                <span style="margin-left:5px;" class="CircularStd-Book">Contáctanos para más información </span>
+                                <span style="margin-left:8px;" class="CircularStd-Book"> y haz tu sueño realidad</span>
+                            </div>
+                            
+                            </v-chip>
+                        </div>
                         <div style="display: flex; flex-direction: row; justify-content: center; margin-top:5%;">
                             <img :src="require(`@/assets/financiando/logos/socasesoreshipotecarios.png`)"
                             width="50%px"
@@ -112,6 +145,6 @@ export default {
 }
 </script>
 
-<style>
+<styl>
 
-</style>
+</styl>
