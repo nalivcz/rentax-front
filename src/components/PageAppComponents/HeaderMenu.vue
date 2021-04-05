@@ -54,7 +54,7 @@
                             <span :key="opcion.id" @click="navegar(opcion.ruta)">{{opcion.descripcion}}</span>
                             <div :key="opcion.id" style="padding-left:10px; display:flex; flex-direction:column; padding:10px;">
                                 <template v-for="sub in opcion.subMenus" v-bind:id="opcion.id">
-                                    <span :key="sub.titulo" @click="navegarSub(sub.ruta, opcion.ruta)" style="color:green">{{sub.titulo}}</span>
+                                    <span :key="sub.titulo" @click="navegarSub(sub.ruta, opcion.ruta)" style="color:green; font-size:12px;">{{sub.titulo}}</span>
                                 </template>
                             </div>
                             <v-divider :key="opcion.id"></v-divider>
@@ -93,7 +93,7 @@ export default {
               ruta : 'desarrollos',
               subMenus : [
                   {
-                      titulo : 'Tu casa a la medida ',
+                      titulo : 'Tu casa a la medida con Your Home',
                       ruta : 'tuCasaLaMedida'
                   },
                   {
