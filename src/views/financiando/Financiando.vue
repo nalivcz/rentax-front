@@ -13,7 +13,7 @@
         </div>
         <div style="display: flex; flex-direction: column; justify-content: center; padding-left :20%; padding-right :20%; padding-top: 2%; padding-bottom:5%">
             
-            <div style="text-align:justify;">De la mano de <span style="color:green" class="CircularStd-Bold">Rent.10ax</span>, las familias que han buscado financiamiento para construir su hogar han sido casos de éxito y se les ha ayudado a resolver cualquier detalle con el <span class="CircularStd-BookItalic">Buro de Crédito</span>. Con el Crédito de Construcción que se utiliza para <span class="CircularStd-Bold">Your Home</span>(construir tu casa a la medida), el banco te puede prestar hasta el 50% para comprar el terreno o hasta el 70% para la construcción, tasas de interes del 7.75% y plazos de hasta 20 años.   </div>
+            <div style="text-align:justify;">De la mano de <span style="color:green" class="CircularStd-Bold">Rentax</span>, las familias que han buscado financiamiento para construir su hogar han sido casos de éxito y se les ha ayudado a resolver cualquier detalle con el <span class="CircularStd-BookItalic">Buro de Crédito</span>. Con el Crédito de Construcción que se utiliza para <span class="CircularStd-Bold">Your Home</span>(construir tu casa a la medida), el banco te puede prestar hasta el 50% para comprar el terreno o hasta el 70% para la construcción, tasas de interes del 7.75% y plazos de hasta 20 años.   </div>
             <div class="CircularStd-Bold" style="display: flex; flex-direction: row; justify-content: center; padding-top:2%;  padding-bottom:2%;">
                 <v-chip
                 class="ma-2"

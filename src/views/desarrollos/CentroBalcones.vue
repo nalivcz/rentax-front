@@ -52,7 +52,7 @@
 	</div>
 </div>
 <div class="hidden-md-and-up">
-	<div :style="{backgroundImage: `url(${require('@/assets/comercialoficinas/plazabalcones.jpg')})`, backgroundSize: '100% 100%', display:'flex', flexDirection:'column', justifyContent: 'center', alignItems:'center' , height:'400px',}">     
+	<div :style="{backgroundImage: `url(${require('@/assets/comercialoficinas/plazabalcones.jpg')})`, backgroundSize: '100% 100%', display:'flex', flexDirection:'column', justifyContent: 'center', alignItems:'center' , height:'200px',}">     
 		<div style="display:flex;  flex-direction : row; align-items:center;justify-content: space-between; ">
 			<div style="display:flex; flex-direction:column; width:100%; margin-rigth:10px;" class="CircularStd-Bold">
 				<div style="display:flex;  flex-direction : row; justify-content:flex-end;">
@@ -73,31 +73,31 @@
 		<div style="width:50%;">
 			<img src="../../assets/comercialoficinas/centrobalcones/imagenes/balcones2.jpg"
 			width="100%"
-			height = "400px"
+			height = "200px"
 			>
 		</div>
 		<div style="width:50%; padding-left:3%">
-			<div style="padding-left:7%; font-size:24px; color:#56555a; letter-spacing:4px;" class="CircularStd-Bold"><span>ZONA CON PLUSVALÍA</span></div>
+			<div style="padding-left:7%; font-size:18px; color:#56555a; letter-spacing:4px;" class="CircularStd-Bold"><span>ZONA CON PLUSVALÍA</span></div>
 			<ul>
-				<li> <span style="font-size:24px; color:#56555a;" class="CircularStd-Book"> Alto flujo vehicular</span></li>
-				<li> <span style="font-size:24px; color:#56555a;" class="CircularStd-Book"> Roof Garden</span></li>
-				<li> <span style="font-size:24px; color:#56555a;" class="CircularStd-Book"> Elevador</span></li>
-				<li> <span style="font-size:24px; color:#56555a;" class="CircularStd-Book"> 70 cajones de estacionamiento</span></li>
+				<li> <span style="font-size:14px; color:#56555a;" class="CircularStd-Book"> Alto flujo vehicular</span></li>
+				<li> <span style="font-size:14px; color:#56555a;" class="CircularStd-Book"> Roof Garden</span></li>
+				<li> <span style="font-size:14px; color:#56555a;" class="CircularStd-Book"> Elevador</span></li>
+				<li> <span style="font-size:14px; color:#56555a;" class="CircularStd-Book"> 70 cajones de estacionamiento</span></li>
 			</ul>
 		</div>
 	</div>  
-	<div style="background-color:#57565b; text-align:center; padding-top:20px;  padding-bottom:10px;">
-		<span style=" font-size:18px; color:WHITE; letter-spacing:4px;" class="CircularStd-Bold">EL MEJOR PUNTO DE CONEXIÓN DE LA ZONA SUR DE LA CIUDAD</span> 
+	<div style="background-color:#57565b; text-align:center; padding-top:20px;   padding-bottom:5%; line-height: .9;">
+		<span style=" font-size:14px; color:WHITE; letter-spacing:4px;" class="CircularStd-Bold">EL MEJOR PUNTO DE CONEXIÓN DE LA ZONA SUR DE LA CIUDAD</span> 
 	</div>
 	<div style="display:flex;  flex-direction : row; align-items:center;justify-content: space-between; ">
-		<div style="width:50%; padding-left:10%; padding-right:5%">
-			<div style="padding-left:7%; font-size:18px; color:#56555a; letter-spacing:1px; line-height: 1.2;" class="CircularStd-Book">
+		<div style="width:50%;">
+			<div style="padding:10%; font-size:12px; color:#56555a; letter-spacing:1px; line-height: 1.2;" class="CircularStd-Book">
 				<span>Ubicado en una zona con importante desarrollo urbano en la ciudad de Culiacán, Sinaloa, Centro Balcones cuenta con espacios diseñados para cualquier tipo de negocio.</span>
-				<hr style="background-color:#4d4d4f; width:40%; border: 2px solid #d70a48; margin-top:60px;">
 			</div>
 		</div>
 		<div style="width:50%">
-			<img src="../../assets/comercialoficinas/centrobalcones/imagenes/planos/Croquis.jpg" width="100%">
+			<img src="../../assets/comercialoficinas/centrobalcones/imagenes/planos/Croquis.jpg" width="100%"
+			height = "200px">
 		</div>
 	</div>	
 	<div>
