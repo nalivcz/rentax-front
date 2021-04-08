@@ -87,7 +87,7 @@
                 </v-carousel-item>
             </v-carousel>
         </div>
-        <div :style="{backgroundImage: `url(${require('@/assets/nosotros/fondopolitica.png')})`, paddingTop:'40px', display:'flex', flexDirection:'column', justifyContent: 'space-evenly'}" class="text-center">
+        <div :style="{backgroundImage: `url(${require('@/assets/nosotros/fondopolitica.jpg')})`, paddingTop:'40px', display:'flex', flexDirection:'column', justifyContent: 'space-evenly'}" class="text-center">
             <div style="margin-top : 20px ;">
                 <span  style=" font-size:36px; color: white; letter-spacing:8px">POLITÍCA DE PRIVACIDAD</span>
             </div>    
@@ -225,7 +225,7 @@
                 </v-carousel-item>
             </v-carousel>
         </div>
-        <div :style="{backgroundImage: `url(${require('@/assets/nosotros/fondopolitica.png')})`, paddingTop:'40px', display:'flex', flexDirection:'column', justifyContent: 'space-evenly'}" class="text-center">
+        <div :style="{backgroundImage: `url(${require('@/assets/nosotros/fondopolitica.jpg')})`, paddingTop:'40px', display:'flex', flexDirection:'column', justifyContent: 'space-evenly'}" class="text-center">
             <div style="margin-top : 20px ;">
                 <span  style=" font-size:36px; color: white; letter-spacing:8px">POLITÍCA DE PRIVACIDAD</span>
             </div>    

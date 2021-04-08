@@ -138,8 +138,8 @@
                 </v-carousel-item>
             </v-carousel>
         </div>
-        <div class="text-center" style="display: flex; flex-direction:column; align-items: center; justify-content: center; padding-top:40px; background-color:#19191a" >
-            <hr style="background-color:#3ab14d; width:120px">
+        <div class="text-center" :style="{ backgroundImage: `url(${require('@/assets/desarrollos/tucasamedida2.jpg')})`, backgroundSize: '100% 100%',height : '200px', display:'flex', flexDirection : 'column' , alignItems : 'center', justifyContent : 'center', paddingTop: '40px' }" >
+            <hr style="background-color:#3ab14d; border: 3px solid #3ab14d; width:60px">
             <div style="margin-bottom: 20px;display:flex;  flex-direction : row; padding:30px">
                 <span  style=" font-size:36px; color: white; letter-spacing:10px">TU CASA A </span>
                 <span  style=" font-size:36px; color: white; letter-spacing:10px; margin-left:10px;" class="CircularStd-Bold">LA MEDIDA</span>
@@ -282,8 +282,8 @@
             </v-carousel-item>
         </v-carousel>
     </div>
-    <div class="text-center" style="display: flex; flex-direction:column; align-items: center; justify-content: center; padding-top:40px; background-color:#19191a" >
-        <hr style="border: 2px solid #3ab14d; width:120px">
+    <div class="text-center" :style="{ backgroundImage: `url(${require('@/assets/desarrollos/tucasamedida2.jpg')})`, backgroundSize: '100% 100%',height : '200px', display:'flex', flexDirection : 'column' , alignItems : 'center', justifyContent : 'center', paddingTop: '40px' }" >
+        <hr style="border: 2px solid #3ab14d; background-color: #3ab14d ; width:120px">
         <div style="margin-bottom: 20px;display:flex;  flex-direction : column; padding:30px">
             <span  style=" font-size:36px; color: white; letter-spacing:10px" class="CircularStd-Book">TU CASA A </span>
             <span  style=" font-size:36px; color: white; letter-spacing:10px; margin-left:10px;" class="CircularStd-Bold">LA MEDIDA</span>
