@@ -14,6 +14,7 @@ import Galeria from '../views/galeria/Galeria.vue';
 import CentroBalcones from '../views/desarrollos/CentroBalcones.vue';
 import TuCasaMedida from '../views/desarrollos/TuCasaMedida.vue';
 import Financiando from '../views/financiando/Financiando.vue'
+import DescripcionBienesRaices from '../views/bienesraices/DescripcionBienesRaices.vue';
 Vue.use(VueRouter)
 
 
@@ -51,8 +52,8 @@ const routes = [
     {
       path: pathDesarrollos,
       component: Desarrollos
-    }  ,
-        {
+    },
+    {
       path: pathFinanciando,
       component: Financiando
     }  ,
@@ -69,6 +70,13 @@ const routes = [
       component: BienesRaicesIndex,
       props(route){
         return {rutaRouter :  route.params.seccion}
+      }
+    } ,
+    {
+      path: pathBienesRaices + '/:seccion' + '/:idBien',
+      component: DescripcionBienesRaices,
+      props(route){
+        return {rutaRouter :  route.params.seccion, idBien : route.params.idBien}
       }
     } ,
     {
