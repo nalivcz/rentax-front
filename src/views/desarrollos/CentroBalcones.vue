@@ -64,7 +64,7 @@
 			</div>
 			<div style="width:100%; margin-left: 5%;padding-left:5px; padding-right:20%;  border-left: 2px solid #d70947; line-height: 60%; text-align:justify;" >
 				<div style="width:70%;">
-				<span class="CircularStd-Bold"  style="font-size:12px; color: white;">EL ESPACIO IDEAL PARA TU NEGOCIO</span>
+				<span class="CircularStd-Bold"  style="font-size:12px; color: white;">EL HH ESPACIO IDEAL PARA TU NEGOCIO</span>
 				</div>
 			</div>
 		</div>  
