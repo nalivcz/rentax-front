@@ -15,6 +15,7 @@ import CentroBalcones from '../views/desarrollos/CentroBalcones.vue';
 import TuCasaMedida from '../views/desarrollos/TuCasaMedida.vue';
 import Financiando from '../views/financiando/Financiando.vue'
 import DescripcionBienesRaices from '../views/bienesraices/DescripcionBienesRaices.vue';
+import consumos from '../views/pruebas/consumos.vue';
 Vue.use(VueRouter)
 
 
@@ -27,6 +28,11 @@ const pathGaleria = '/galeria';
 const pathFinanciando = '/financiandoTuProyecto';
 
 const routes = [
+  {
+    path : '/consumos',
+    name : 'consumos',
+    component : consumos,
+  },
   {
     path : '/',
     name : 'index',
