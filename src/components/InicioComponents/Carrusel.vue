@@ -43,6 +43,8 @@
 </template>
 
 <script>
+import { API_URL } from '../../serviceManager/ServiceManagerConsts.js';
+import Axios from 'axios';
 export default {
     name : 'Carrusel',
     data : ()=>({
@@ -63,7 +65,11 @@ export default {
             src: 'carrusel3.jpg',
           }
         ],
-    })
+    }),
+    async mounted(){
+        let objetosData = (await Axios.get(API_URL + 'banner')).data;
+        console.log("se leyeron los objetos", objetosData);
+    }
 }
 </script>
 
