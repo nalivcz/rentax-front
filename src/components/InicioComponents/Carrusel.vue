@@ -2,9 +2,9 @@
     <div>
         <v-carousel dark = true>
             <v-carousel-item
-            v-for="(item,i) in items"
+            v-for="(item,i) in carruselDesktop"
             :key="i"
-            :src="require(`@/assets/${item.src}`)"
+            :src="item.src"
             reverse-transition="fade-transition"
             transition="fade-transition"
             style=""
@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import { API_URL } from '../../serviceManager/ServiceManagerConsts.js';
+import { API_URL,API_IMAGES } from '../../serviceManager/ServiceManagerConsts.js';
 import Axios from 'axios';
 export default {
     name : 'Carrusel',
@@ -65,10 +65,31 @@ export default {
             src: 'carrusel3.jpg',
           }
         ],
+        carruselDesktop : [],
+        carruselMovil : []
     }),
     async mounted(){
         let objetosData = (await Axios.get(API_URL + 'banner')).data;
-        console.log("se leyeron los objetos", objetosData);
+        //console.log("se leyeron los objetos", objetosData);
+        let jsonArray = objetosData.data ;
+        console.log(jsonArray);
+        this.carruselDesktop = this.items.map(function(iterator){
+            var objetoSalida = {
+                "titulo" : iterator.titulo,
+                "subtitulo"  : iterator.subtitulo,
+                "src" : API_IMAGES + jsonArray[0].desktopImage
+            }
+            return objetoSalida ; 
+        });
+        this.carruselMovil = this.items.map(function(iterator){
+            var objetoSalida = {
+                "titulo" : iterator.titulo,
+                "subtitulo"  : iterator.subtitulo,
+                "src" : API_IMAGES + jsonArray[0].mobileImage
+            }
+            return objetoSalida ; 
+        });
+        console.log(this.carruselDesktop);
     }
 }
 </script>
