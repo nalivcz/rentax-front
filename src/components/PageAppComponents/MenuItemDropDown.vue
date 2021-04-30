@@ -36,12 +36,14 @@
 </template>
 
 <script>
+import {mapMutations} from 'vuex';
   export default {
     name : 'MenuItemDropDown',
     props : { items2 : Array, descripcion :{type : String, required : true } , ruta : String},
     
     
     methods : {
+      ...mapMutations(['setCentro']),
         navegar:function(){
             //this.navegar(this.ruta);
             if(this.ruta !== "desarrollos"){
@@ -53,7 +55,14 @@
           if(route !== ""){
              var subRuta = this.ruta + '/' + route ; 
            
-            if (this.$route.path !== subRuta) this.$router.push('/'+subRuta);
+            if (this.$route.path !== subRuta){
+               if(route.includes('centro')){
+                        //console.log('estas llendo a un centro');
+                        //console.log('slicing' + route.slice(5,route.length));
+                        this.setCentro(route.slice(6,route.length));
+                    }
+               this.$router.push('/'+subRuta);
+            }
           }
          
         }

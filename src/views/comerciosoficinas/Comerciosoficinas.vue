@@ -20,7 +20,7 @@
     
             <div style="display:flex; flex-direction: row ; justify-content: space-evenly">
                 <template v-for="item in items" v-bind:id="item.titulo">
-                    <PlasasyOficinas :key="item.titulo" :tamañoIcono=230 :titulo = item.titulo :srcImagen = item.src></PlasasyOficinas>
+                    <PlasasyOficinas :key="item.titulo" :tamañoIcono=230 :ruta = item.ruta :titulo = item.titulo :srcImagen = item.src></PlasasyOficinas>
                 </template> 
             </div>  
              
@@ -51,7 +51,7 @@
                     class="d-flex child-flex"
                     cols="6"
                     >
-                    <PlasasyOficinas :key="item.titulo" :tamañoIcono=160 :titulo = item.titulo :srcImagen = item.src></PlasasyOficinas>
+                    <PlasasyOficinas :key="item.titulo" :tamañoIcono=160 :ruta = item.ruta :titulo = item.titulo :srcImagen = item.src></PlasasyOficinas>
                     </v-col>
                 </v-row>
             </div>  
@@ -72,18 +72,22 @@ export default {
              {
                  titulo : "Centro Balcones",
                  src : "comercialoficinas/plazabalcones.jpg",
+                 ruta : "centroBalcones"
              },
              {
                  titulo : "Centro Andrade",
                  src : "CentroAndrade.jpg",
+                 ruta : "centroAndrade"
              },
              {
                  titulo : "Centro Alfa",
                  src : "CentroAlfa.jpg",
+                 ruta : "centroAlfa"
              },
              {
                  titulo : "Centro Delta",
                  src : "CentroDelta.jpg",
+                 ruta : "centroDelta"
              },
          ]
      })

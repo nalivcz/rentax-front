@@ -9,7 +9,8 @@ const urlApiPrueba = 'https://demo7586883.mockable.io/' ;
 
 export default new Vuex.Store({
   state: {
-    objetos : []
+    objetos : [],
+    nombreCentro : '' 
   },
   getters: {
     objetos : state => state.objetos
@@ -17,6 +18,9 @@ export default new Vuex.Store({
   mutations: {
     setObjetos(state,data){
       state.objetos = data;
+    },
+    setCentro(state,data){
+      state.nombreCentro = data.toUpperCase() 
     }
   },
   actions: {

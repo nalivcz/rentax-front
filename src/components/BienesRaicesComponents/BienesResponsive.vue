@@ -9,6 +9,7 @@
                 style="margin-top:30px;"
                 outlined
                 class="white--text "
+                @click="navegar()"
                 >
                 VER MÁS
                 <v-icon right color="grey">
@@ -26,9 +27,17 @@ export default {
     props : {
         srcImagen : String, 
         titulo : String , 
-
+        ruta : String
+    },
+    methods:{
+        navegar:function(){
+            console.log(this.ruta);
+            var subRuta = '/bienesRaices/' + this.ruta ;
+            this.$router.push(subRuta);
+          }
+         
+        }
     }
-}
 </script>
 
 <style>

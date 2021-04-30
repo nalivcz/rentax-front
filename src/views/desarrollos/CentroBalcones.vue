@@ -5,7 +5,7 @@
 		<div style="display:flex;  flex-direction : row; align-items:center;justify-content: space-between; padding:30px; width:40%;">
 			<div style="display:flex; flex-direction:column; width:10%; padding-right:40px; text-align:justify;" class="CircularStd-Bold">
 				<span  style=" font-size:38px; color: white; letter-spacing:7px; line-height: .8;">CENTRO</span>
-				<span  style=" font-size:36px; color: white; letter-spacing:.01px; line-height: .8;">BALCONES</span>
+				<span  style=" font-size:36px; color: white; letter-spacing:.01px; line-height: .8;">{{$store.state.nombreCentro}}</span>
 			</div>
 			<div style="width:50%; text­align: justify; padding-left:5px;  border-left: 2px solid #d70947;" >
 				<span class="CircularStd-Bold"  style=" font-size:28px; text-­align: justify; color: white;line-height: .8;">EL ESPACIO IDEAL PARA TU NEGOCIO</span>
@@ -59,7 +59,7 @@
 					<span  style=" font-size:18px; color: white; letter-spacing:7px; line-height: .8; width:70%">CENTRO</span>
 				</div>
 				<div style="display:flex;  flex-direction : row; justify-content:flex-end">
-					<span  style=" font-size:18px; color: white; letter-spacing:2px; line-height: .8; width:70%">BALCONES</span>
+					<span  style=" font-size:18px; color: white; letter-spacing:2px; line-height: .8; width:70%">{{$store.state.nombreCentro}}</span>
 				</div>	
 			</div>
 			<div style="width:100%; margin-left: 5%;padding-left:5px; padding-right:20%;  border-left: 2px solid #d70947; line-height: 60%; text-align:justify;" >
@@ -150,9 +150,10 @@ export default {
 				]
 			}
 		],
-		azoteaSrc : 'azotea1.jpg'
-	})
-
+		azoteaSrc : 'azotea1.jpg',
+		nombre : this.nombreCentro
+	}),
+	
 };
 </script>
 

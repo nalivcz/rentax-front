@@ -93,8 +93,11 @@ const routes = [
       }
     },
     {
-      path: pathComercialOficinas+'/centrobalcones',
-      component: CentroBalcones
+      path: pathComercialOficinas+'/:nombreCentro',
+      component: CentroBalcones,
+      props(route){
+        return {rutaRouter :  route.params.nombreCentro}
+      }
     }     
   ]
   },

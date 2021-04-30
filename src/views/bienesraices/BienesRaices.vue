@@ -7,7 +7,7 @@
         <center><hr style="background-color:#4d4d4f; width:60px; border: 2px solid #4d4d4f;"></center>
         <div style="margin-top:20px; display:flex; justify-content: space-evenly;" class="CircularStd-Bold">
            <template v-for="item in items" v-bind:id="item.titulo">
-                <AvatarDownButton :key="item.titulo" :titulo = item.titulo :srcImagen = item.src ></AvatarDownButton>
+                <AvatarDownButton :key="item.titulo" :titulo = item.titulo :srcImagen = item.src :ruta=item.ruta ></AvatarDownButton>
             </template> 
         </div>
         <div class="text-center CircularStd-Book divFinanciando" :style="{backgroundImage: `url(${require('@/assets/inicio/financiandoproyecto.jpg')})`, backgroundSize: '100% 100%', height : '350px'}">
@@ -41,7 +41,7 @@
         <center><hr style="background-color:#3ab14d; width:50px; border: 2px solid #3ab14d; margin-top:20px;"></center>
         <div style="margin-top:20px; display:flex; flex-direction:column;" class="CircularStd-Bold">
            <template v-for="item in items" v-bind:id="item.titulo">
-                <BienesResponsive :key="item.titulo" :titulo = item.titulo :srcImagen = item.src ></BienesResponsive>
+                <BienesResponsive :key="item.titulo" :ruta= item.ruta :titulo = item.titulo :srcImagen = item.src ></BienesResponsive>
             </template> 
         </div>
         <div class="text-center CircularStd-Book divFinanciando" :style="{backgroundImage: `url(${require('@/assets/inicio/financiandoproyecto.jpg')})`, backgroundSize: '100% 100%', height : '280px', marginTop:'10px'}">
@@ -84,14 +84,17 @@ export default {
              {
                  titulo : "Casas y Departamentos",
                  src : "casasdepartamentos.png",
+                 ruta : "casasDepartamentos"
              },
              {
                  titulo : "Áreas Comerciales",
                  src : "areascomerciales.jpeg",
+                 ruta : "areasComerciales"
              },
              {
                  titulo : "Áreas Industriales",
                  src : "areasindustriales.png",
+                 ruta : "areasIndustriales"
              },
          ]
      }),

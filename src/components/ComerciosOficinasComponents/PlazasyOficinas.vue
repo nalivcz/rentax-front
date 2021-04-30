@@ -18,6 +18,7 @@
             style="margin-top:30px;"
             
             class="white--text"
+            @click="navegar()"
             >
             VER MÁS
             <v-icon right color="green">
@@ -30,14 +31,27 @@
 </template>
 
 <script>
+import {mapMutations} from 'vuex';
 export default {
     name : "AvatarDownButton",
     props : {
         srcImagen : String, 
         titulo : String , 
-        tamañoIcono : Number
+        tamañoIcono : Number,
+        ruta: String 
+    },
+    methods:{
+        ...mapMutations(['setCentro']),
+        navegar:function(){
+            var subRuta = '/comercialOficinas/' + this.ruta ;
+            console.log(this.titulo.slice(6,this.titulo.length))
+            this.setCentro(this.titulo.slice(6,this.titulo.length));
+            this.$router.push(subRuta);
+          }
+         
+        }
     }
-}
+
 </script>
 
 <style>

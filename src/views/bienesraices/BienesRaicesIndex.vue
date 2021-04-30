@@ -72,7 +72,7 @@
                         tile
                         color="success"
                         >
-                        VER MÁS 
+                        VER MÁS
                         <v-icon small style="margin-left:3px;" >
                             mdi-play
                         </v-icon>

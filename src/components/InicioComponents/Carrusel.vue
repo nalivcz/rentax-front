@@ -2,9 +2,9 @@
     <div>
         <v-carousel dark = true>
             <v-carousel-item
-            v-for="(item,i) in carruselDesktop"
+            v-for="(item,i) in items"
             :key="i"
-            :src="item.src"
+            :src="require(`@/assets/${item.src}`)"
             reverse-transition="fade-transition"
             transition="fade-transition"
             style=""
@@ -69,6 +69,7 @@ export default {
         carruselMovil : []
     }),
     async mounted(){
+        
         let objetosData = (await Axios.get(API_URL + 'banner')).data;
         //console.log("se leyeron los objetos", objetosData);
         let jsonArray = objetosData.data ;

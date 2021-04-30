@@ -74,6 +74,7 @@
 </template>
 <script>
 import MenuItemDropDown from './MenuItemDropDown'
+import {mapMutations} from 'vuex';
 export default {
     name : 'HeaderMenu',
     components : {MenuItemDropDown } ,
@@ -113,7 +114,7 @@ export default {
               subMenus : [
                   {
                       titulo : 'Centro Andrade',
-                      ruta : ''
+                      ruta : 'centroAndrade'
                   },
                   {
                       titulo : 'Centro Balcones',
@@ -121,15 +122,15 @@ export default {
                   },
                   {
                       titulo : 'Centro Alfa',
-                      ruta : ''
+                      ruta : 'centroAlfa'
                   },
                   {
                       titulo : 'Centro Delta',
-                      ruta : ''
+                      ruta : 'centroDelta'
                   },
                   {
                       titulo : 'Centro 87',
-                      ruta : ''
+                      ruta : 'centro87'
                   }
               ]
           },
@@ -170,6 +171,7 @@ export default {
       ]
     }),
     methods:{
+        ...mapMutations(['setCentro']),
         irInicio:function(){
             this.$router.push('/');
         },
@@ -183,10 +185,18 @@ export default {
         },
         navegarSub:function(route,mainRoute){
             var rutaIr = mainRoute + '/' + route ; 
+            //console.log('mainRoute' + mainRoute + ' ' + 'route '+ route);
             if(route !== ""){
                 //var subRuta = this.ruta + '/' + route ; 
-           
-            if (this.$route.path !== rutaIr) this.$router.push('/'+rutaIr);
+
+                if (this.$route.path !== rutaIr) {
+                    if(route.includes('centro')){
+                        //console.log('estas llendo a un centro');
+                        //console.log('slicing' + route.slice(5,route.length));
+                        this.setCentro(route.slice(6,route.length));
+                    }
+                    this.$router.push('/'+rutaIr);
+                }
             }
          
         }
