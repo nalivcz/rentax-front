@@ -103,7 +103,7 @@ export default {
                   },
                   {
                       titulo : 'Veranda Los Cabos',
-                      ruta : ''
+                      ruta : 'veranda'
                   }
               ]
           },

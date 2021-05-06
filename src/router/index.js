@@ -16,6 +16,7 @@ import TuCasaMedida from '../views/desarrollos/TuCasaMedida.vue';
 import Financiando from '../views/financiando/Financiando.vue'
 import DescripcionBienesRaices from '../views/bienesraices/DescripcionBienesRaices.vue';
 import consumos from '../views/pruebas/consumos.vue';
+import Veranda from '../views/desarrollos/Veranda.vue'
 Vue.use(VueRouter)
 
 
@@ -62,15 +63,19 @@ const routes = [
     {
       path: pathFinanciando,
       component: Financiando
-    }  ,
+    },
     {
       path: pathDesarrollos + '/tuCasaLaMedida',
       component: TuCasaMedida
     },
     {
+      path: pathDesarrollos + '/veranda',
+      component: Veranda
+    },
+    {
       path: pathBienesRaices ,
       component: BienesRaices
-    } ,
+    },
     {
       path: pathBienesRaices + '/:seccion',
       component: BienesRaicesIndex,

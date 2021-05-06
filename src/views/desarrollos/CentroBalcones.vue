@@ -151,7 +151,7 @@ export default {
 			}
 		],
 		azoteaSrc : 'azotea1.jpg',
-		nombre : this.nombreCentro
+		
 	}),
 	
 };
@@ -184,3 +184,4 @@ li::before {
   color: #d70a48; /* Or a color you prefer */
 }
 </style>
+ 
