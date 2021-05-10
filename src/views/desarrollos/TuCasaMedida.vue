@@ -93,11 +93,9 @@
                         cols="2"
                         >
                             <div style="display:flex; flex-direction:column; align-items:center;">
-                                <v-chip color="#3ae154" text-color="white" >
-                                    <span class="CircularStd-Bold">{{item.id}}</span>
-                                </v-chip>
+                                
                                 <img :src="require(`@/assets/iconos/${item.src}`)" width="40%" style="margin-top:15px;">
-                                <span>{{item.titulo}}</span>
+                                
                             </div>
                         </v-col>
                     </v-row>
@@ -236,11 +234,9 @@
                     cols="4"
                     >
                         <div style="display:flex; flex-direction:column; align-items:center;">
-                            <v-chip color="#3ae154" text-color="white" >
-                                <span class="CircularStd-Bold">{{item.id}}</span>
-                            </v-chip>
+                            
                             <img :src="require(`@/assets/iconos/${item.src}`)" width="40%" style="margin-top:15px;">
-                            <span>{{item.titulo}}</span>
+                            
                         </div>
                     </v-col>
                 </v-row>
@@ -316,62 +312,62 @@ export default {
         itemsIconos : [
             {
                 id : 1 , 
-                src : 'familia.svg',
+                src : '01.png',
                 titulo : 'Conocemos las necesidades de la familia'
             },
             {
                 id : 2 , 
-                src : 'terreno.svg',
+                src : '02.png',
                 titulo : 'Buscamos el terreno ideal'
             },
             {
                 id : 3 , 
-                src : 'diseñosplanos.svg',
+                src : '03.png',
                 titulo : 'Proponemos diseños y planos'
             },
             {
                 id : 4 , 
-                src : 'revisiondetalles.svg',
+                src : '04.png',
                 titulo : 'Revisamos todos los detalles'
             },
             {
                 id : 5 , 
-                src : 'cotizacion.svg',
+                src : '05.png',
                 titulo : 'Te entregamos una cotización completa'
             },
             {
                 id : 6 , 
-                src : 'financiamiento.svg',
+                src : '06.png',
                 titulo : 'Te ofrecemos alternativas de financiamiento'
             },
             {
                 id : 7 , 
-                src : 'gestionespermisos.svg',
+                src : '07.png',
                 titulo : 'Nos encargamos de gestiones y permisos'
             },
             {
                 id : 8 , 
-                src : 'informacionsemanal.svg',
+                src : '08.png',
                 titulo : 'Construimos con información semanal de avances'
             },
             {
                 id : 9 , 
-                src : 'cuidadoacabados.svg',
+                src : '09.png',
                 titulo : 'Cuidamos todos los acabados'
             },
             {
                 id : 10 , 
-                src : 'inspeccion.svg',
+                src : '10.png',
                 titulo : 'Inspección final de tu nuevo hogar'
             },
             {
                 id : 11 , 
-                src : 'garantia.svg',
+                src : '11.png',
                 titulo : 'Te ofrecemos alternativas de financiamiento'
             },
             {
                 id : 12 , 
-                src : 'arquiplano.svg',
+                src : '12.png',
                 titulo : 'Cada detalle como lo has imaginado'
             }
         ],

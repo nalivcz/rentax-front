@@ -31,6 +31,72 @@
         <div style="width:50%; display:flex; justify-content:flex-end;">
 			<img src="../../assets/desarrollos/veranda/mozaico.png" width="50%">
 		</div>
+	</div>
+	<div style="background-color:#b4ada7; display:flex;  flex-direction : row; align-items:center;justify-content: space-between; ">
+		<div style="width:50%; padding-left:10%;">
+			<div style="font-size:24px; color:#56555a;" class="CircularStd-Book">
+				<span>12 departamentos</span>
+			</div>
+			<div style="font-size:24px; color:#56555a;" class="CircularStd-Bold">
+				<span>2 recámaras</span>
+			</div>
+			<div style="font-size:20px; color:#56555a;" class="CircularStd-Book">
+				<span>(con terraza incluida)</span>
+			</div>
+			<div style="">
+				<hr style="background-color:#c8c4c0; width:100%; border: 2px solid #c8c4c0; margin-top:2%;">
+			</div>
+			<div style="font-size:20px; color:#56555a;" class="CircularStd-Book">
+				<span>142.45 m<sup>2</sup></span>
+			</div>
+				<div style="display:flex; flex-direction: column; font-size:18px; color:#ffffff; margin-top:10%;">
+					<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; margin-top:2%;">
+					<span  class="CircularStd-Book">•2 Recámaras</span>
+					<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; ">
+					<span  class="CircularStd-Book">• Cuarto de servicio</span>
+					<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; ">
+					<span  class="CircularStd-Book">• Sala comedor</span>
+					<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; ">
+					<span  class="CircularStd-Book">• 1/2 Baños</span>
+					<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; ">
+				</div>
+		</div>
+		<div style="width:50%">
+			<img src="../../assets/desarrollos/veranda/croquis2.png" width="100%" height="100%">
+		</div>
+	</div>    
+	<div style="background-color:#b4ada7; display:flex;  flex-direction : row; align-items:center;justify-content: space-between; ">
+		<div style="width:50%; padding-left:10%;">
+			<div style="font-size:24px; color:#56555a;" class="CircularStd-Book">
+				<span>6 departamentos</span>
+			</div>
+			<div style="font-size:24px; color:#56555a;" class="CircularStd-Bold">
+				<span>3 recámaras</span>
+			</div>
+			<div style="font-size:20px; color:#56555a;" class="CircularStd-Book">
+				<span>(con terraza incluida)</span>
+			</div>
+			<div style="">
+				<hr style="background-color:#c8c4c0; width:100%; border: 2px solid #c8c4c0; margin-top:2%;">
+			</div>
+			<div style="font-size:20px; color:#56555a;" class="CircularStd-Book">
+				<span>178.3 m<sup>2</sup></span>
+			</div>
+				<div style="display:flex; flex-direction: column; font-size:18px; color:#ffffff; margin-top:10%;">
+					<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; margin-top:2%;">
+					<span  class="CircularStd-Book">•3 Recámaras</span>
+					<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; ">
+					<span  class="CircularStd-Book">• Cuarto de servicio</span>
+					<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; ">
+					<span  class="CircularStd-Book">• Sala comedor</span>
+					<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; ">
+					<span  class="CircularStd-Book">• 1/2 Baños</span>
+					<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; ">
+				</div>
+		</div>
+		<div style="width:50%">
+			<img src="../../assets/desarrollos/veranda/croquis3.png" width="100%" height="100%">
+		</div>
 	</div>  
 	<div>
         <div style="padding-left:5%; padding-right:5% ; padding-top:3%; padding-bottom:3%" >
@@ -135,18 +201,7 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
    background-color: #c4c4c4;
 }
-ul {
-  list-style: none; /* Remove HTML bullets */
-  
-}
-li::before {
-  content: ""; /* Insert content that looks like bullets */
-  padding-right: 4px;
-  font-size:18px;
-  vertical-align:middle;
-  line-height:10px;
-  color: #c4c4c4; /* Or a color you prefer */
-}
+
 
 </style>
  
