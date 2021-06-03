@@ -112,20 +112,7 @@ export default {
             subtitulo : 'Los contratistas de Rentax son supervisados por un equipo de inspectores. En esta etapa recibirás reportes de avance semanal.'
           },
           
-        ],
-        opiniones: [
-          {
-            src: 'ingenieronombrebien.png',
-            nombre :'Juan Garcia, San Anselmo',
-            comentario : '"Lo mejor de trabajar con Rentax, fue su sistema Construye Tu Hogar. Rapido, efectivo y se adapto a nuestras necesidades"',
-          },
-          {
-            src: 'ingenieronombrebien.png',
-            nombre :'Juan Garcia, San Anselmo',
-            comentario : '"Lo mejor de trabajar con Rentax, fue su sistema Construye Tu Hogar. Rapido, efectivo y se adapto a nuestras necesidades"',
-         
-          }
-        ],
+        ]
     })
 }
 </script>

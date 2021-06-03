@@ -17,7 +17,7 @@
                         <center>
                         <div style="display: flex; flex-direction:column; column; justify-content: center; width: 50%;">
                             <span  style=" font-size:16px; color: white;">{{item.comentario}}</span>    
-                            <span  style=" font-size:16px; color: white;">{{item.nombre}}</span>
+                            <span  style=" font-size:16px; color: white;  border-left: 2px solid #505052; border-right:  2px solid #505052;">{{item.nombre}}</span>
                         </div>
                         </center>
                     </div>  
@@ -62,15 +62,14 @@ export default {
     data : () => ({
         opiniones: [
           {
-            src: 'ingenieronombrebien.png',
-            nombre :'Juan Garcia, San Anselmo',
+            src: 'mujer.png',
+            nombre :'Andrea López, San Agustín',
             comentario : '"Lo mejor de trabajar con Rentax, fue su sistema Construye Tu Hogar. Rapido, efectivo y se adapto a nuestras necesidades"',
           },
           {
-            src: 'ingenieronombrebien.png',
+            src: 'hombre.png',
             nombre :'Juan Garcia, San Anselmo',
             comentario : '"Lo mejor de trabajar con Rentax, fue su sistema Construye Tu Hogar. Rapido, efectivo y se adapto a nuestras necesidades"',
-         
           }
         ]
     })

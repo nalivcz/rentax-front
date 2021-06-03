@@ -1,7 +1,7 @@
 <template>
 <v-app>
     <div style="display: flex; flex-direction : column;" class="CircularStd-Book hidden-sm-and-down" >
-        <div :style="{backgroundImage: `url(${require('@/assets/nosotros/fondofilosofia.jpg')})`,  paddingTop:'20px', display:'flex', justifyContent: 'flex-start', paddingTop:'20px'}">
+        <div :style="{backgroundImage: `url(${require('@/assets/nosotros/fondofilosofia.jpg')})`, backgroundSize: '100% 100%',  paddingTop:'20px', display:'flex', justifyContent: 'flex-start', paddingTop:'20px'}">
             <div style="margin-top : 50px; padding-bottom:100px ; display:flex;  justify-content: flex-start">
                 <div style="display:flex; flex-direction: column; justify-content : flex-start;padding-left:130px">
                     <span  style=" font-size:48px; color: white; letter-spacing:14px">FILOSOFÍA DE</span>
@@ -25,7 +25,7 @@
                 </div>
             </div>    
         </div>
-        <div :style="{backgroundImage: `url(${require('@/assets/nosotros/fondomision.jpg')})`,   display:'flex', flexDirection : 'column', paddingTop:'10px',paddingBottom:'10px'}">
+        <div :style="{backgroundImage: `url(${require('@/assets/nosotros/fondomision.jpg')})`, backgroundSize: '100% 100%',   display:'flex', flexDirection : 'column', paddingTop:'10px',paddingBottom:'10px'}">
             <div style="display:flex; flex-direction: row ; ">
                  <div style="display:flex; flex-direction: column; justify-content : flex-start; margin-left:200px">
                     <div style="display:flex; flex-direction: column; justify-content : flex-start; width: 300px;">
@@ -59,7 +59,7 @@
                 </div>
             </div>    
         </div>
-        <div :style="{backgroundImage: `url(${require('@/assets/nosotros/fondogaleria.jpg')})`, paddingTop:'20px', display:'flex', flexDirection:'column', justifyContent: 'space-evenly', paddingTop:'20px'}" class="text-center">
+        <div :style="{backgroundImage: `url(${require('@/assets/nosotros/fondogaleria.jpg')})`, backgroundSize: '100% 100%', paddingTop:'20px', display:'flex', flexDirection:'column', justifyContent: 'space-evenly', paddingTop:'20px'}" class="text-center">
             <div style="margin-top : 20px ;">
                 <span  style=" font-size:36px; color: #58585a; letter-spacing:6px">¿QUIÉNES SOMOS?</span>
             </div>   
@@ -87,7 +87,7 @@
                 </v-carousel-item>
             </v-carousel>
         </div>
-        <div :style="{backgroundImage: `url(${require('@/assets/nosotros/fondopolitica.jpg')})`, paddingTop:'40px', display:'flex', flexDirection:'column', justifyContent: 'space-evenly'}" class="text-center">
+        <div :style="{backgroundImage: `url(${require('@/assets/nosotros/fondopolitica.jpg')})`, backgroundSize: '100% 100%', paddingTop:'40px', display:'flex', flexDirection:'column', justifyContent: 'space-evenly'}" class="text-center">
             <div style="margin-top : 20px ;">
                 <span  style=" font-size:36px; color: white; letter-spacing:8px">POLITÍCA DE PRIVACIDAD</span>
             </div>    
