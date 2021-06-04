@@ -1,6 +1,6 @@
 <template>
   <div>
-      <div class="hidden-sm-and-down" style="padding-bottom:40px;  padding-top:20px; background-color:green; display:flex; justify-content: center; align-items:baseline ;">
+      <div class="hidden-sm-and-down" style="padding-bottom:4%;  padding-top:2%; padding-right:10%; padding-left:10%; background-color:#36a748; display:flex; justify-content: center; align-items:baseline ;">
             <div v-for="(item,i) in opiniones" :key="i" style="display: flex; flex-direction : column; justify-content: center;">
                 <div style="display: flex; align-items: center; justify-content: center;">
                     <div style="margin-top:20px;display:flex;  flex-direction : column; justify-content: center; ">
@@ -15,9 +15,11 @@
                             </center>
                         </div>
                         <center>
-                        <div style="display: flex; flex-direction:column; column; justify-content: center; width: 50%;">
-                            <span  style=" font-size:16px; color: white;">{{item.comentario}}</span>    
-                            <span  style=" font-size:16px; color: white;  border-left: 2px solid #505052; border-right:  2px solid #505052;">{{item.nombre}}</span>
+                        <div style="display: flex; flex-direction:column; column; justify-content: center; width: 70%; padding-top:5%;">
+                            <span  style=" font-size:18px; color: white; letter-spacing:2px; line-height:100%;" class="CircularStd-Book">{{item.comentario}}</span>    
+                            <div style="margin-top:3%">
+                                <span class="CircularStd-Book"  style="padding-left:2%; padding-right:2%; font-size:16px; color: white;  border-left: 2px solid #505052; border-right:  2px solid #505052;">{{item.nombre}}</span>
+                            </div>
                         </div>
                         </center>
                     </div>  

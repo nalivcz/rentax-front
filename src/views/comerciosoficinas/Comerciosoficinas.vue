@@ -27,7 +27,7 @@
         </div>
     </div>
     <div style="display: flex; flex-direction : column;" class="text-center hidden-md-and-up">
-        <div :style="{backgroundImage: `url(${require('@/assets/comercialoficinas/plazabalcones.jpg')})`, backgroundSize: '100vh', display:'flex', flexDirection:'column', justifContent: 'spaceEvenly', paddingTop:'20px', height:'50vh'}">
+        <div :style="{backgroundImage: `url(${require('@/assets/comercialoficinas/plazabalcones.jpg')})`, backgroundSize: '100% 100%', display:'flex', flexDirection:'column', justifContent: 'spaceEvenly', paddingTop:'20px', height:'50vh'}">
             <div style="margin-top : 20px ;">
                 <span class="CircularStd-Book" style=" font-size:22px; color: white; letter-spacing:1px; background-color:#4b4b4d; padding-left:25px; padding-right:25px; padding-top:10px; padding-bottom:10px;  border-color:white; border-width:1px; border-style:solid;">COMERCIAL</span>
             </div>    

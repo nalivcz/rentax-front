@@ -85,5 +85,8 @@ export default {
   }  
 .CircularStd-MediumItalic{
     font-family:  "CircularStd-MediumItalic";
+  }
+  .letra-color-verde{
+    color : "#4eb95f"
   }     
 </style>
