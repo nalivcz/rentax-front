@@ -7,7 +7,7 @@
             alt="John"
             style="opacity : .5"
         >
-        <span class="white--text CircularStd-Bold" style="position:absolute; font-size: 18px; width:50%;">{{titulo}}</span>
+        <span class="white--text CircularStd-Black" style="position:absolute; font-size: 24px; width:50%;">{{titulo}}</span>
         </v-avatar>
         </center>
         <v-container >
@@ -17,7 +17,7 @@
             color="#4d4d4f"
             style="margin-top:30px;"
             
-            class="white--text"
+            class="white--text CircularStd-Bold"
             @click="navegar()"
             >
             VER MÁS

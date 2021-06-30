@@ -3,9 +3,9 @@
         <Carrusel></Carrusel>
         <Beneficios></Beneficios>
         <Opiniones></Opiniones>
-        <Comerciosoficinas></Comerciosoficinas>
+        <ComerciosOficinasIndex></ComerciosOficinasIndex>
         <BienesRaices></BienesRaices>
-        <Galeria :origen=2></Galeria>
+        <GaleriaIndex :origen=2></GaleriaIndex>
         <div>
         <Contactanos></Contactanos>    
         </div>
@@ -14,21 +14,22 @@
 <script>
 import Contactanos from '../contactanos/Contactanos';
 import BienesRaices from '../bienesraices/BienesRaices';
-import Comerciosoficinas from '../comerciosoficinas/Comerciosoficinas';
-import Galeria from '../galeria/Galeria';
+import GaleriaIndex from '../galeria/GaleriaIndex';
 import Carrusel from '../../components/InicioComponents/Carrusel';
 import Opiniones from '../../components/InicioComponents/Opiniones';
 import Beneficios from '../../components/InicioComponents/Beneficios'; 
+import ComerciosOficinasIndex from '../../views/comerciosoficinas/ComerciosOficinasIndex';
+
 export default {
     name : 'Inicio',
     components:{
         Contactanos,
         BienesRaices,
-        Comerciosoficinas,
-        Galeria,
+        GaleriaIndex,
         Carrusel,
         Opiniones,
-        Beneficios
+        Beneficios,
+        ComerciosOficinasIndex
     },
     
 }

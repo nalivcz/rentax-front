@@ -1,5 +1,5 @@
 <template>
-    <v-container>
+    <v-container style="padding-left:10%; padding-right:10%">
         <center><h1 style="color:#3ab14d; letter-spacing:5px;" class="CircularStd-Book">GALERÍA</h1></center>
         <div style="margin-top:10px;" class="text-center">
             <span class="hidden-sm-and-down"  style=" font-size:24px; background-color:#3ab14d; color: white; letter-spacing:8px; padding:8px;">PROYECTOS ENTREGADOS</span>
@@ -118,10 +118,15 @@ export default {
             {srcImage : '03.jpg'},
             {srcImage : '04.jpg'},
             {srcImage : '05.jpg'},
-            {srcImage : '06.jpg'}
+            {srcImage : '06.jpg'},
+            {srcImage : '07.jpg'}, {srcImage : '08.jpg'}, {srcImage : '09.jpg'}, {srcImage :
+'10.jpg'}, {srcImage : '11.jpg'}, {srcImage : '12.jpg'}, {srcImage : '13.jpg'},
+{srcImage : '14.jpg'}, {srcImage : '15.jpg'}, {srcImage : '16.jpg'}, {srcImage :
+'17.jpg'}
+
         ],
-        btnMsg : 'VER MÁS',
-        flag : false,
+        btnMsg : 'VER MENOS',
+        flag : true,
     }),
     methods: {
       verMas(){

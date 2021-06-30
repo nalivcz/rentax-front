@@ -14,12 +14,13 @@
         </div>
         <div style="background-color : #e2e2e4; display:flex; flex-direction : column; padding-top:10px; padding-bottom:40px">
             <div style="margin-top : 20px ; padding : 30px;">
-                <span  style=" font-size:30px; color: #3e984d; letter-spacing:8px" class="CircularStd-Medium">PLAZAS Y OFICINAS</span>
+                <span  style=" font-size:30px; color: #38b04c; letter-spacing:8px" class="CircularStd-Bold">PLAZAS Y OFICINAS</span>
                 <center><hr style="background-color:#4d4d4f; width:60px; border: 2px solid #4d4d4f;"></center>
             </div> 
     
-            <div style="display:flex; flex-direction: row ; justify-content: space-evenly">
-                <template v-for="item in items" v-bind:id="item.titulo">
+            <div style="display:flex; flex-direction: row ; justify-content: space-evenly; padding-left:20%;padding-right:20%;
+">
+                <template v-for="item in items2" v-bind:id="item.titulo">
                     <PlasasyOficinas :key="item.titulo" :tamañoIcono=230 :ruta = item.ruta :titulo = item.titulo :srcImagen = item.src></PlasasyOficinas>
                 </template> 
             </div>  
@@ -89,7 +90,15 @@ export default {
                  src : "CentroDelta.jpg",
                  ruta : "centroDelta"
              },
-         ]
+         ],
+         items2 :[
+              { 
+                   titulo :
+                    "Centro Andrade", src : "CentroAndrade.jpg", ruta : "centroAndrade" },
+                     { titulo
+                    : "Centro Alfa", src : "CentroAlfa.jpg", ruta : "centroAlfa" }, { titulo :
+                    "Centro Delta", src : "CentroDelta.jpg", ruta : "centroDelta" }, ]
+
      })
 }
 </script>

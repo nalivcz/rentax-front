@@ -6,7 +6,7 @@
             alt="John"
             style="opacity : .2"
         >
-        <span class="white--text " style="position:absolute; font-size: 24px; font-weigth: bold">{{titulo}}</span>
+        <span class="white--text CircularStd-Black " style="position:absolute; font-size: 24px;">{{titulo}}</span>
         </v-avatar>
         <v-container>
             <v-btn
@@ -14,7 +14,7 @@
             color="#4d4d4f"
             style="margin-top:30px;"
             outlined
-            class="white--text "
+            class="white--text CircularStd-Bold"
             @click="navegar()"
             >
             VER MÁS

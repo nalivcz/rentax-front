@@ -14,7 +14,12 @@ export default {
   components: {
   
   },
-
+  watch: {
+    $route() {
+      window.scrollTo(0, 0)
+      
+    }
+  },
   data: () => ({
     //
   }),

@@ -1,7 +1,7 @@
 <template>
 <v-app>
     <div class="hidden-sm-and-down">
-	<div :style="{backgroundImage: `url(${require('@/assets/desarrollos/veranda/2.jpg')})`, backgroundSize: '100% 100%', display:'flex', flexDirection:'column', justifContent: 'center', alignItems:'center' ,paddingTop:'10%', height:'500px',}">     
+	<div :style="{backgroundImage: `url(${require('@/assets/desarrollos/veranda/2black.jpg')})`, backgroundSize: '100% 100%', display:'flex', flexDirection:'column', justifContent: 'center', alignItems:'center' ,paddingTop:'10%', height:'500px',}">     
 		<div style="display:flex;  flex-direction : row; align-items:center;justify-content: space-between; padding:30px; width:40%;">
 			<div style="display:flex; flex-direction:column; width:10%; padding-right:40px; text-align:justify;" class="CircularStd-Bold">
 				<span  style=" font-size:30px; color: white; letter-spacing:7px; line-height: .8;">VERANDA</span>
@@ -98,7 +98,7 @@
 			<img src="../../assets/desarrollos/veranda/croquis3.png" width="100%" height="100%">
 		</div>
 	</div>  
-	<div>
+	<div style="padding-bottom:5%;">
         <div style="padding-left:5%; padding-right:5% ; padding-top:3%; padding-bottom:3%" >
             <img src="../../assets/desarrollos/veranda/3.jpg" width="100%" height="300px">
             <div class="text-center">
@@ -108,22 +108,22 @@
         <div style="display:flex;  flex-direction : row; align-items:center;justify-content: space-between; ">
             <div style="width:50%; padding-left:10%; padding-right:5%">
                 <div style="padding-left:7%; font-size:18px; color:#56555a; letter-spacing:1px; line-height: 1.2;" class="CircularStd-Book">
-                    <ul>
-                        <li> <span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Alberca.</span></li>
-                        <li> <span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Chapoteadero.</span></li>
-                        <li> <span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Comedor con Asador.</span></li>
-                        <li> <span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Zona de Juegos.</span></li>
-                    </ul>
+                    <div style="display:flex; flex-direction:column;">
+                        <span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Alberca.</span>
+                        <span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Chapoteadero.</span>
+                        <span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Comedor con Asador.</span>
+                        <span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Zona de Juegos.</span>
+                    </div>
                 </div>
             </div>
             <div style="width:50%; padding-left:1%; padding-right:5%">
                 <div style="padding-left:3%; font-size:18px; color:#56555a; letter-spacing:1px; line-height: 1.2;" class="CircularStd-Book">
-                    <ul>
-                        <li> <span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Áreas ajardinadas.</span></li>
-                        <li> <span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Roof Garden en cada edificio.</span></li>
-                        <li> <span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Dos cajones de estacionamiento techado por departamento.</span></li>
-                        <li> <span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Bodega opcional.</span></li>
-                    </ul>
+                    <div style="display:flex; flex-direction:column;">
+                        <span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Áreas ajardinadas.</span>
+                        <span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Roof Garden en cada edificio.</span>
+                        <span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Dos cajones de estacionamiento techado por departamento.</span>
+                        <span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Bodega opcional.</span>
+                    </div>
                 </div>
             </div>
         </div>	

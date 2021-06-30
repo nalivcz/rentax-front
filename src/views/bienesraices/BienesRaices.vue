@@ -1,11 +1,11 @@
 <template>
 <v-app>
     <div style="background-color : #3ab14d;" class="text-center CircularStd-Book hidden-sm-and-down">
-        <div style="">
+        <div style="margin-top:3%;">
             <span class="text-center" style=" font-size:36px; font-weight: bold; color: white; letter-spacing: 5px;">BIENES RAÍCES</span>
         </div>
         <center><hr style="background-color:#4d4d4f; width:60px; border: 2px solid #4d4d4f;"></center>
-        <div style="margin-top:20px; display:flex; justify-content: space-evenly;" class="CircularStd-Bold">
+        <div style="margin-top:20px; display:flex; justify-content: space-evenly; padding-bottom:5%; padding-right:20%; padding-left:20%;" class="CircularStd-Bold">
            <template v-for="item in items" v-bind:id="item.titulo">
                 <AvatarDownButton :key="item.titulo" :titulo = item.titulo :srcImagen = item.src :ruta=item.ruta ></AvatarDownButton>
             </template> 
