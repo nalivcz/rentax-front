@@ -53,34 +53,12 @@
             <div style="padding-left:10%; padding-right:10%; padding-bottom:10%;">
             <v-row>
                 <v-col
-                v-for="item in items"
+                v-for="item in items" 
                 :key="item.src"
                 class="d-flex child-flex"
                 cols="6"
                 >
-                <div style="display: flex; flex-direction : column; ">
-                    <img
-                    :src="require(`@/assets/bienesraices/submodules/casasdepartamentos/${item.src}`)"
-                    :lazy-src="require(`@/assets/bienesraices/submodules/casasdepartamentos/${item.src}`)"
-                    >
-                    <span style="font-size:24px;">EN VENTA</span>
-                    <span style="font-size:30px;" class="CircularStd-Bold">{{item.precio}}</span>
-                    <div style="display: flex; flex-direction : row; justify-content:flex-start; align-items:baseline; color:#515153">
-                        <span>{{item.direccion}}</span>
-                        <div style="display: flex; flex-direction : column; justify-content: flex-end; margin-left:20px;">
-                        <v-btn
-                        tile
-                        color="success"
-                        >
-                        VER MÁS
-                        <v-icon small style="margin-left:3px;" >
-                            mdi-play
-                        </v-icon>
-                        </v-btn>
-                    </div>
-                    </div>
-                    
-                </div>
+                <ImagenCVM :srcImagen=item.src :precio=item.precio :direccion=item.direccion :nombrePropiedad=item.nombrePropiedad :arrayImages=item.arrayImages />
                 
                 </v-col>
                 </v-row> 
@@ -187,10 +165,14 @@
     </v-app>
 </template>
 <script>
+import ImagenCVM from '../../components/GalleryDialogComponents/ImagenCVM' ;
 export default {
     name : 'BienesRaicesIndex',
     props : {
         rutaRouter : String
+    },
+    components:{
+        ImagenCVM 
     },
     data : () => ({
          items :[
@@ -198,33 +180,75 @@ export default {
                  precio : "4.9 MDP",
                  direccion : "Casa en San Miguel, La primavera",
                  src : "201.png",
-                 id : 201
+                 id : 201,
+                 nombrePropiedad : 'Propiedad 1', 
+                    arrayImages : [
+                    { src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg', index : 0  }, 
+                    { src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg', index : 1 }, 
+                    { src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg', index : 2 }, 
+                    { src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg', index : 3},
+                ]
              },
              {
                  precio : "4.9 MDP",
                  direccion : "Casa en San Miguel, La primavera",
                  src : "202.png",
-                 id : 202
+                 id : 202,
+                 nombrePropiedad : 'Propiedad 2', 
+                    arrayImages : [
+                    { src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg', index : 0  }, 
+                    { src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg', index : 1 }, 
+                    { src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg', index : 2 }, 
+                    { src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg', index : 3},
+                ]
              },{
                  precio : "4.9 MDP",
                  direccion : "Casa en San Miguel, La primavera",
                  src : "203.png",
-                 id : 203
+                 id : 203,
+                 nombrePropiedad : 'Propiedad 3', 
+                    arrayImages : [
+                    { src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg', index : 0  }, 
+                    { src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg', index : 1 }, 
+                    { src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg', index : 2 }, 
+                    { src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg', index : 3},
+                ]
              },{
                  precio : "4.9 MDP",
                  direccion : "Casa en San Miguel, La primavera",
                  src : "204.png",
-                 id : 204
+                 id : 204,
+                 nombrePropiedad : 'Propiedad 4', 
+                    arrayImages : [
+                    { src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg', index : 0  }, 
+                    { src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg', index : 1 }, 
+                    { src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg', index : 2 }, 
+                    { src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg', index : 3},
+                ]
              },{
                  precio : "4.9 MDP",
                  direccion : "Casa en San Miguel, La primavera",
                  src : "205.png",
-                 id : 205
+                 id : 205,
+                 nombrePropiedad : 'Propiedad 5', 
+                    arrayImages : [
+                    { src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg', index : 0  }, 
+                    { src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg', index : 1 }, 
+                    { src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg', index : 2 }, 
+                    { src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg', index : 3},
+                ]
              },{
                  precio : "4.9 MDP",
                  direccion : "Casa en San Miguel, La primavera",
                  src : "206.png",
-                 id : 206
+                 id : 206,
+                 nombrePropiedad : 'Propiedad 6', 
+                    arrayImages : [
+                    { src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg', index : 0  }, 
+                    { src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg', index : 1 }, 
+                    { src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg', index : 2 }, 
+                    { src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg', index : 3},
+                ]
              },
          ],
          opcionesinteres:['Compra','Renta','Venta'],

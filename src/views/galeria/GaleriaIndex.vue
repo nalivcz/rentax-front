@@ -30,22 +30,7 @@
         cols="4"
         
       >
-        <v-img
-          :src="require(`@/assets/Galeria/${item.srcImage}`)"
-          :lazy-src="require(`@/assets/Galeria/${item.srcImage}`)"
-          aspect-ratio="1"
-          max-height="100"
-          class="grey lighten-2"
-        >
-          <template v-slot:placeholder>
-            <v-row class="fill-height ma-0" align="center" justify="center">
-              <v-progress-circular
-                indeterminate
-                color="grey lighten-5"
-              ></v-progress-circular>
-            </v-row>
-          </template>
-        </v-img>
+        <ImagenVM :srcImagen="item.srcImage" :key="item.key"  :nombrePropiedad="item.nombrePropiedad" :arrayImages="item.arrayImages"></ImagenVM>
       </v-col>
     </v-row>
     <v-row v-if="origen == 1" style="margin-top:20px" class="hidden-md-and-up">
@@ -55,21 +40,7 @@
         class="d-flex child-flex"
         cols="12"
       >
-        <v-img
-          :src="require(`@/assets/Galeria/${item.srcImage}`)"
-          :lazy-src="require(`@/assets/Galeria/${item.srcImage}`)"
-          aspect-ratio="1"
-          class="grey lighten-2"
-        >
-          <template v-slot:placeholder>
-            <v-row class="fill-height ma-0" align="center" justify="center">
-              <v-progress-circular
-                indeterminate
-                color="grey lighten-5"
-              ></v-progress-circular>
-            </v-row>
-          </template>
-        </v-img>
+        <ImagenVM :srcImagen="item.srcImage" :key="item.key" :arrayImages="item.arrayImages"></ImagenVM>
       </v-col>
     </v-row>
     <v-row v-if="origen == 2" style="margin-top:20px" class="hidden-md-and-up">
@@ -113,20 +84,82 @@
   </v-container>
 </template>
 <script>
+import ImagenVM from '../../components/GalleryDialogComponents/ImagenVM';
 export default {
   name: "GaleriaIndex",
+  components : { ImagenVM },
   props: {
     origen: Number
   },
   data: () => ({
     items: [
-      { srcImage: "01.jpg" },
-      { srcImage: "02.jpg" },
-      { srcImage: "03.jpg" },
-      { srcImage: "04.jpg" },
-      { srcImage: "05.jpg" },
-      { srcImage: "06.jpg" }
-    ],
+      { 
+        key: 1, 
+        srcImage: "01.jpg",
+        nombrePropiedad : 'Propiedad 1', 
+        arrayImages : [
+          { src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg', index : 0  }, 
+          { src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg', index : 1 }, 
+          { src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg', index : 2 }, 
+          { src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg', index : 3},
+        ]
+      },
+      { 
+        key: 2, 
+        srcImage: "02.jpg",
+        nombrePropiedad : 'Propiedad 2', 
+        arrayImages : [
+          { src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg', index : 0  }, 
+          { src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg', index : 1 }, 
+          { src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg', index : 2 }, 
+          { src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg', index : 3},
+        ]
+      },
+      { 
+        key: 3, 
+        srcImage: "03.jpg",
+        nombrePropiedad : 'Propiedad 3', 
+        arrayImages : [
+          { src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg', index : 0  }, 
+          { src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg', index : 1 }, 
+          { src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg', index : 2 }, 
+          { src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg', index : 3},
+        ]
+      },
+      { 
+        key: 4, 
+        srcImage: "04.jpg",
+        nombrePropiedad : 'Propiedad 4', 
+        arrayImages : [
+          { src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg', index : 0  }, 
+          { src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg', index : 1 }, 
+          { src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg', index : 2 }, 
+          { src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg', index : 3},
+        ]
+      },
+      { 
+        key: 5, 
+        srcImage: "05.jpg",
+        nombrePropiedad : 'Propiedad 5', 
+        arrayImages : [
+          { src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg', index : 0  }, 
+          { src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg', index : 1 }, 
+          { src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg', index : 2 }, 
+          { src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg', index : 3},
+        ]
+      },
+      { 
+        key: 6, 
+        srcImage: "06.jpg",
+        nombrePropiedad : 'Propiedad 6', 
+        arrayImages : [
+          { src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg', index : 0  }, 
+          { src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg', index : 1 }, 
+          { src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg', index : 2 }, 
+          { src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg', index : 3},
+        ]
+      },
+    ], 
     btnMsg: "VER MÁS",
     flag: false
   }),

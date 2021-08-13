@@ -1,188 +1,188 @@
 <template>
 <v-app>
-    <div class="hidden-sm-and-down">
-	<div :style="{backgroundImage: `url(${require('@/assets/desarrollos/veranda/2black.jpg')})`, backgroundSize: '100% 100%', display:'flex', flexDirection:'column', justifContent: 'center', alignItems:'center' ,paddingTop:'10%', height:'500px',}">     
-		<div style="display:flex;  flex-direction : row; align-items:center;justify-content: space-between; padding:30px; width:40%;">
-			<div style="display:flex; flex-direction:column; width:10%; padding-right:40px; text-align:justify;" class="CircularStd-Bold">
-				<span  style=" font-size:30px; color: white; letter-spacing:7px; line-height: .8;">VERANDA</span>
-				<span  style=" font-size:30px; color: white; letter-spacing:.01px; line-height: .8;">RESIDENCES</span>
-			</div>
-			<div style="width:50%; text­align: justify; padding-left:5px;  border-left: 2px solid #d70947;" >
-				<span class="CircularStd-Bold"  style=" font-size:24px; text-­align: justify; color: white;line-height: .8;">EL ESPACIO IDEAL PARA TI</span>
-			</div>
-		</div>  
-    </div>
-	<div style="display:flex;  flex-direction : row; align-items:center;justify-content: space-between; ">
-		<div style="width:50%; padding-left:3%">
-			<div style="padding-left:7%; font-size:24px; color:#56555a; letter-spacing:.01px;">
-                <span class="CircularStd-Book">Te presentamos nuestro proyecto en Los Cabos, </span>
-                <span class="CircularStd-Bold">con todas las comodidades para tu familia. </span>
-                <span class="CircularStd-Book">Con la mejor vista.</span>
-            </div>
-            <div style="padding-left:7%; font-size:24px; color:#56555a; letter-spacing:.01px; margin-top:5%;">
-                <span class="CircularStd-Book">El proyecto está en la estapa de prospección, listo para arrancar. Ubicado dentro del condominio </span>
-                <span class="CircularStd-Bold">Vista Real </span>
-                <span class="CircularStd-Book">en Cabo San Lucas.</span>
-            </div>
-            <div style="padding-left:7%; font-size:24px; color:#56555a; letter-spacing:.01px; margin-top:5%;">
-                <span class="CircularStd-Book">Conócelo.</span>
-            </div>
-		</div>
-        <div style="width:50%; display:flex; justify-content:flex-end;">
-			<img src="../../assets/desarrollos/veranda/mozaico.png" width="50%">
-		</div>
-	</div>
-	<div style="background-color:#b4ada7; display:flex;  flex-direction : row; align-items:center;justify-content: space-between; ">
-		<div style="width:50%; padding-left:10%;">
-			<div style="font-size:24px; color:#56555a;" class="CircularStd-Book">
-				<span>12 departamentos</span>
-			</div>
-			<div style="font-size:24px; color:#56555a;" class="CircularStd-Bold">
-				<span>2 recámaras</span>
-			</div>
-			<div style="font-size:20px; color:#56555a;" class="CircularStd-Book">
-				<span>(con terraza incluida)</span>
-			</div>
-			<div style="">
-				<hr style="background-color:#c8c4c0; width:100%; border: 2px solid #c8c4c0; margin-top:2%;">
-			</div>
-			<div style="font-size:20px; color:#56555a;" class="CircularStd-Book">
-				<span>142.45 m<sup>2</sup></span>
-			</div>
-				<div style="display:flex; flex-direction: column; font-size:18px; color:#ffffff; margin-top:10%;">
-					<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; margin-top:2%;">
-					<span  class="CircularStd-Book">•2 Recámaras</span>
-					<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; ">
-					<span  class="CircularStd-Book">• Cuarto de servicio</span>
-					<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; ">
-					<span  class="CircularStd-Book">• Sala comedor</span>
-					<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; ">
-					<span  class="CircularStd-Book">• 1/2 Baños</span>
-					<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; ">
+	<div class="hidden-sm-and-down"> 
+		<div :style="{backgroundImage: `url(${require('@/assets/desarrollos/veranda/2black.jpg')})`, backgroundSize: '100% 100%', display:'flex', flexDirection:'column', justifContent: 'center', alignItems:'center' ,paddingTop:'10%', height:'500px',}">     
+			<div style="display:flex;  flex-direction : row; align-items:center;justify-content: space-between; padding:30px; width:40%;">
+				<div style="display:flex; flex-direction:column; width:10%; padding-right:40px; text-align:justify;" class="CircularStd-Bold">
+					<span  style=" font-size:30px; color: white; letter-spacing:7px; line-height: .8;">VERANDA</span>
+					<span  style=" font-size:30px; color: white; letter-spacing:.01px; line-height: .8;">RESIDENCES</span>
 				</div>
-		</div>
-		<div style="width:50%">
-			<img src="../../assets/desarrollos/veranda/croquis2.png" width="100%" height="100%">
-		</div>
-	</div>    
-	<div style="background-color:#b4ada7; display:flex;  flex-direction : row; align-items:center;justify-content: space-between; ">
-		<div style="width:50%; padding-left:10%;">
-			<div style="font-size:24px; color:#56555a;" class="CircularStd-Book">
-				<span>6 departamentos</span>
-			</div>
-			<div style="font-size:24px; color:#56555a;" class="CircularStd-Bold">
-				<span>3 recámaras</span>
-			</div>
-			<div style="font-size:20px; color:#56555a;" class="CircularStd-Book">
-				<span>(con terraza incluida)</span>
-			</div>
-			<div style="">
-				<hr style="background-color:#c8c4c0; width:100%; border: 2px solid #c8c4c0; margin-top:2%;">
-			</div>
-			<div style="font-size:20px; color:#56555a;" class="CircularStd-Book">
-				<span>178.3 m<sup>2</sup></span>
-			</div>
-				<div style="display:flex; flex-direction: column; font-size:18px; color:#ffffff; margin-top:10%;">
-					<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; margin-top:2%;">
-					<span  class="CircularStd-Book">•3 Recámaras</span>
-					<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; ">
-					<span  class="CircularStd-Book">• Cuarto de servicio</span>
-					<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; ">
-					<span  class="CircularStd-Book">• Sala comedor</span>
-					<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; ">
-					<span  class="CircularStd-Book">• 1/2 Baños</span>
-					<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; ">
+				<div style="width:50%; text­align: justify; padding-left:5px;  border-left: 2px solid #d70947;" >
+					<span class="CircularStd-Bold"  style=" font-size:24px; text-­align: justify; color: white;line-height: .8;">EL ESPACIO IDEAL PARA TI</span>
 				</div>
+			</div>  
 		</div>
-		<div style="width:50%">
-			<img src="../../assets/desarrollos/veranda/croquis3.png" width="100%" height="100%">
-		</div>
-	</div>  
-	<div style="padding-bottom:5%;">
-        <div style="padding-left:5%; padding-right:5% ; padding-top:3%; padding-bottom:3%" >
-            <img src="../../assets/desarrollos/veranda/3.jpg" width="100%" height="300px">
-            <div class="text-center">
-            <span class="text-center" style=" font-size:36px; font-weight: bold; color:#56555a; letter-spacing: 5px;">AMENIDADES</span>
-            </div>
-        </div>
-        <div style="display:flex;  flex-direction : row; align-items:center;justify-content: space-between; ">
-            <div style="width:50%; padding-left:10%; padding-right:5%">
-                <div style="padding-left:7%; font-size:18px; color:#56555a; letter-spacing:1px; line-height: 1.2;" class="CircularStd-Book">
-                    <div style="display:flex; flex-direction:column;">
-                        <span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Alberca.</span>
-                        <span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Chapoteadero.</span>
-                        <span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Comedor con Asador.</span>
-                        <span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Zona de Juegos.</span>
-                    </div>
-                </div>
-            </div>
-            <div style="width:50%; padding-left:1%; padding-right:5%">
-                <div style="padding-left:3%; font-size:18px; color:#56555a; letter-spacing:1px; line-height: 1.2;" class="CircularStd-Book">
-                    <div style="display:flex; flex-direction:column;">
-                        <span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Áreas ajardinadas.</span>
-                        <span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Roof Garden en cada edificio.</span>
-                        <span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Dos cajones de estacionamiento techado por departamento.</span>
-                        <span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Bodega opcional.</span>
-                    </div>
-                </div>
-            </div>
-        </div>	
-    </div>
-	<div style="background-color : #d4cbc2" class="CircularStd-Book" >
-		<center><h1 style="color:white; letter-spacing:6px;">CONTACTO</h1></center>
-		<FormContacto></FormContacto>
-	</div>
-</div>
-<div class="hidden-md-and-up">
-	<div :style="{backgroundImage: `url(${require('@/assets/comercialoficinas/plazabalcones.jpg')})`, backgroundSize: '100% 100%', display:'flex', flexDirection:'column', justifyContent: 'center', alignItems:'center' , height:'200px',}">     
 		<div style="display:flex;  flex-direction : row; align-items:center;justify-content: space-between; ">
-			<div style="display:flex; flex-direction:column; width:100%; margin-rigth:10px;" class="CircularStd-Bold">
-				<div style="display:flex;  flex-direction : row; justify-content:flex-end;">
-					<span  style=" font-size:18px; color: white; letter-spacing:7px; line-height: .8; width:70%">CENTRO</span>
+			<div style="width:50%; padding-left:3%">
+				<div style="padding-left:7%; font-size:24px; color:#56555a; letter-spacing:.01px;">
+					<span class="CircularStd-Book">{{descripcion}}</span>
 				</div>
-				<div style="display:flex;  flex-direction : row; justify-content:flex-end">
-					<span  style=" font-size:18px; color: white; letter-spacing:2px; line-height: .8; width:70%">VERANDA</span>
-				</div>	
+				
 			</div>
-			<div style="width:100%; margin-left: 5%;padding-left:5px; padding-right:20%;  border-left: 2px solid #d70947; line-height: 60%; text-align:justify;" >
-				<div style="width:70%;">
-				<span class="CircularStd-Bold"  style="font-size:12px; color: white;">EL ESPACIO IDEAL PARA TI</span>
+			<div style="width:50%; display:flex; justify-content:flex-end;">
+				<img src="../../assets/desarrollos/veranda/mozaico.png" width="50%">
+			</div>
+		</div>
+		<div style="background-color:#b4ada7; display:flex;  flex-direction : row; align-items:center;justify-content: space-between; ">
+			<div style="width:50%; padding-left:10%;">
+				<div style="font-size:24px; color:#56555a;" class="CircularStd-Book">
+					<span>12 departamentos</span>
 				</div>
+				<div style="font-size:24px; color:#56555a;" class="CircularStd-Bold">
+					<span>2 recámaras</span>
+				</div>
+				<div style="font-size:20px; color:#56555a;" class="CircularStd-Book">
+					<span>(con terraza incluida)</span>
+				</div>
+				<div style="">
+					<hr style="background-color:#c8c4c0; width:100%; border: 2px solid #c8c4c0; margin-top:2%;">
+				</div>
+				<div style="font-size:20px; color:#56555a;" class="CircularStd-Book">
+					<span>142.45 m<sup>2</sup></span>
+				</div>
+					<div style="display:flex; flex-direction: column; font-size:18px; color:#ffffff; margin-top:10%;">
+						<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; margin-top:2%;">
+						<span  class="CircularStd-Book">•2 Recámaras</span>
+						<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; ">
+						<span  class="CircularStd-Book">• Cuarto de servicio</span>
+						<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; ">
+						<span  class="CircularStd-Book">• Sala comedor</span>
+						<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; ">
+						<span  class="CircularStd-Book">• 1/2 Baños</span>
+						<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; ">
+					</div>
+			</div>
+			<div style="width:50%">
+				<img src="../../assets/desarrollos/veranda/croquis2.png" width="100%" height="100%">
+			</div>
+		</div>    
+		<div style="background-color:#b4ada7; display:flex;  flex-direction : row; align-items:center;justify-content: space-between; ">
+			<div style="width:50%; padding-left:10%;">
+				<div style="font-size:24px; color:#56555a;" class="CircularStd-Book">
+					<span>6 departamentos</span>
+				</div>
+				<div style="font-size:24px; color:#56555a;" class="CircularStd-Bold">
+					<span>3 recámaras</span>
+				</div>
+				<div style="font-size:20px; color:#56555a;" class="CircularStd-Book">
+					<span>(con terraza incluida)</span>
+				</div>
+				<div style="">
+					<hr style="background-color:#c8c4c0; width:100%; border: 2px solid #c8c4c0; margin-top:2%;">
+				</div>
+				<div style="font-size:20px; color:#56555a;" class="CircularStd-Book">
+					<span>178.3 m<sup>2</sup></span>
+				</div>
+					<div style="display:flex; flex-direction: column; font-size:18px; color:#ffffff; margin-top:10%;">
+						<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; margin-top:2%;">
+						<span  class="CircularStd-Book">•3 Recámaras</span>
+						<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; ">
+						<span  class="CircularStd-Book">• Cuarto de servicio</span>
+						<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; ">
+						<span  class="CircularStd-Book">• Sala comedor</span>
+						<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; ">
+						<span  class="CircularStd-Book">• 1/2 Baños</span>
+						<hr style="background-color:#a5a09a; width:60%; border: 1px solid #a5a09a; ">
+					</div>
+			</div>
+			<div style="width:50%">
+				<img src="../../assets/desarrollos/veranda/croquis3.png" width="100%" height="100%">
 			</div>
 		</div>  
-    </div>
-	<div style="display:flex;  flex-direction : row; align-items:center;justify-content: space-between; ">
-		<div style="width:50%;">
-			<div style="padding:10%; font-size:12px; color:#56555a; letter-spacing:1px; line-height: 1.2;" class="CircularStd-Book">
-				<span>Ubicado en una zona con importante desarrollo urbano en la ciudad de Culiacán, Sinaloa, Centro Balcones cuenta con espacios diseñados para cualquier tipo de negocio.</span>
+		<div style="padding-bottom:5%;">
+			<div style="padding-left:5%; padding-right:5% ; padding-top:3%; padding-bottom:3%" >
+				<img src="../../assets/desarrollos/veranda/3.jpg" width="100%" height="300px">
+				<div class="text-center">
+				<span class="text-center" style=" font-size:36px; font-weight: bold; color:#56555a; letter-spacing: 5px;">AMENIDADES</span>
+				</div>
 			</div>
+			<div style="display:flex;  flex-direction : row; align-items:center;justify-content: space-between; ">
+				<div style="width:50%; padding-left:10%; padding-right:5%">
+					<div style="padding-left:7%; font-size:18px; color:#56555a; letter-spacing:1px; line-height: 1.2;" class="CircularStd-Book">
+						<div style="display:flex; flex-direction:column;">
+							<span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Alberca.</span>
+							<span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Chapoteadero.</span>
+							<span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Comedor con Asador.</span>
+							<span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Zona de Juegos.</span>
+						</div>
+					</div>
+				</div>
+				<div style="width:50%; padding-left:1%; padding-right:5%">
+					<div style="padding-left:3%; font-size:18px; color:#56555a; letter-spacing:1px; line-height: 1.2;" class="CircularStd-Book">
+						<div style="display:flex; flex-direction:column;">
+							<span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Áreas ajardinadas.</span>
+							<span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Roof Garden en cada edificio.</span>
+							<span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Dos cajones de estacionamiento techado por departamento.</span>
+							<span style="font-size:24px; color:#56555a;" class="CircularStd-Book">•Bodega opcional.</span>
+						</div>
+					</div>
+				</div>
+			</div>	
 		</div>
-		<div style="width:50%">
-			<img src="../../assets/comercialoficinas/centrobalcones/imagenes/planos/Croquis.jpg" width="100%"
-			height = "200px">
+		<div style="background-color : #d4cbc2" class="CircularStd-Book" >
+			<center><h1 style="color:white; letter-spacing:6px;">CONTACTO</h1></center>
+			<FormContacto></FormContacto>
 		</div>
-	</div>	
-	<div style="background-color : #d4cbc2" class="CircularStd-Book" >
-		<center><h1 style="color:white; letter-spacing:6px;">CONTACTO</h1></center>
-		<FormContacto></FormContacto>
 	</div>
-</div>
-
+	<div class="hidden-md-and-up">
+		<div :style="{backgroundImage: `url(${require('@/assets/comercialoficinas/plazabalcones.jpg')})`, backgroundSize: '100% 100%', display:'flex', flexDirection:'column', justifyContent: 'center', alignItems:'center' , height:'200px',}">     
+			<div style="display:flex;  flex-direction : row; align-items:center;justify-content: space-between; ">
+				<div style="display:flex; flex-direction:column; width:100%; margin-rigth:10px;" class="CircularStd-Bold">
+					<div style="display:flex;  flex-direction : row; justify-content:flex-end;">
+						<span  style=" font-size:18px; color: white; letter-spacing:7px; line-height: .8; width:70%">CENTRO</span>
+					</div>
+					<div style="display:flex;  flex-direction : row; justify-content:flex-end">
+						<span  style=" font-size:18px; color: white; letter-spacing:2px; line-height: .8; width:70%">VERANDA</span>
+					</div>	
+				</div>
+				<div style="width:100%; margin-left: 5%;padding-left:5px; padding-right:20%;  border-left: 2px solid #d70947; line-height: 60%; text-align:justify;" >
+					<div style="width:70%;">
+					<span class="CircularStd-Bold"  style="font-size:12px; color: white;">EL ESPACIO IDEAL PARA TI</span>
+					</div>
+				</div>
+			</div>  
+		</div>
+		<div style="display:flex;  flex-direction : row; align-items:center;justify-content: space-between; ">
+			<div style="width:50%;">
+				<div style="padding:10%; font-size:12px; color:#56555a; letter-spacing:1px; line-height: 1.2;" class="CircularStd-Book">
+					<span>Ubicado en una zona con importante desarrollo urbano en la ciudad de Culiacán, Sinaloa, Centro Balcones cuenta con espacios diseñados para cualquier tipo de negocio.</span>
+				</div>
+			</div>
+			<div style="width:50%">
+				<img src="../../assets/comercialoficinas/centrobalcones/imagenes/planos/Croquis.jpg" width="100%"
+				height = "200px">
+			</div>
+		</div>	
+		<div style="background-color : #d4cbc2" class="CircularStd-Book" >
+			<center><h1 style="color:white; letter-spacing:6px;">CONTACTO</h1></center>
+			<FormContacto></FormContacto>
+		</div>
+	</div>
 </v-app>
 </template>
 
 <script>
+import { PATH_DESAROLLOS_VERANDA } from '../../serviceManager/ServiceManagerConsts.js';
+import Axios from 'axios';
 import FormContacto from '../../components/FormContacto';
-
 export default {
 	name: "CentroBalcones",
 	components :  {
 		FormContacto,
 	},
 	data : ()=>({
-		
-		
+		descripcion : '',
+		srcImagenDesktop : '',
+		srcImagenMobile : '' 
 	}),
+	async mounted(){
+		let objetosData = (await Axios.get(PATH_DESAROLLOS_VERANDA)).data;
+		//console.log(objetosData);
+		// mapping data 
+		let objetoDeDatos = objetosData.data ; 
+		console.log(objetoDeDatos);
+		this.descripcion = objetoDeDatos.description ;
+	}
 	
 };
 </script>
