@@ -9,6 +9,24 @@
             :src="require(`@/assets/bienesraices/submodules/casasdepartamentos/${srcImagen}`)"
             :lazy-src="require(`@/assets/bienesraices/submodules/casasdepartamentos/${srcImagen}`)"
             >
+            <div style="display:flex; flex-direction : row;">
+              <div v-if="totalCuartos != ''" style="display : flex; flex-direction : row ; width : 25%;">
+                <v-icon large color="black">mdi-bed</v-icon>
+                <span style="font-size:24px; margin-bottom:2px;" class="CircularStd-Bold">{{totalCuartos}}</span>
+              </div>
+              <div v-if="totalBanos != ''" style="display : flex; flex-direction : row ; width : 25%;">
+                <v-icon large color="black" >mdi-shower</v-icon>
+                <span style="font-size:24px; margin-bottom:2px;" class="CircularStd-Bold">{{totalBanos}}</span>
+              </div>
+              <div v-if="totalCocheras != ''" style="display : flex; flex-direction : row ; width : 25%;">
+                <v-icon large color="black">mdi-car</v-icon>
+                <span style="font-size:24px; margin-bottom:2px;" class="CircularStd-Bold">{{totalCocheras}}</span>
+              </div>
+              <div v-if="totalMetros != ''" style="display : flex; flex-direction : row; width : 25%;">
+                <v-icon large color="black">mdi-ruler-square</v-icon>
+                <span style="font-size:24px; margin-bottom:2px;" class="CircularStd-Bold">{{totalMetros}}</span>
+              </div>
+            </div>
             <span style="font-size:24px;">EN VENTA</span>
             <span style="font-size:30px;" class="CircularStd-Bold">{{precio}}</span>
             <div style="display: flex; flex-direction : row; justify-content:flex-start; align-items:baseline; color:#515153">
@@ -114,7 +132,11 @@ props : {
   arrayImages : Array,
   venta : String , 
   direccion : String ,
-  precio : String 
+  precio : String ,
+  totalCuartos : String , 
+  totalMetros : String, 
+  totalBanos : String , 
+  totalCocheras : String
 },
 data : () =>({
   indiceImagen : 0,

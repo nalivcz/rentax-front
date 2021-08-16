@@ -10,7 +10,8 @@ const urlApiPrueba = 'https://demo7586883.mockable.io/' ;
 export default new Vuex.Store({
   state: {
     objetos : [],
-    nombreCentro : '' 
+    nombreCentro : '' ,
+    desarrollos: [] 
   },
   getters: {
     objetos : state => state.objetos

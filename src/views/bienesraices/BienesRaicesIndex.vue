@@ -58,7 +58,7 @@
                 class="d-flex child-flex"
                 cols="6"
                 >
-                <ImagenCVM :srcImagen=item.src :precio=item.precio :direccion=item.direccion :nombrePropiedad=item.nombrePropiedad :arrayImages=item.arrayImages />
+                <ImagenCVM :srcImagen=item.src :precio=item.precio :direccion=item.direccion :nombrePropiedad=item.nombrePropiedad :arrayImages=item.arrayImages :totalCuartos=item.totalCuartos :totalBanos=item.totalBanos :totalCocheras=item.totalCocheras :totalMetros=item.totalMetros  />
                 
                 </v-col>
                 </v-row> 
@@ -187,7 +187,11 @@ export default {
                     { src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg', index : 1 }, 
                     { src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg', index : 2 }, 
                     { src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg', index : 3},
-                ]
+                ],
+                totalCuartos : '10' ,
+                totalBanos  : '2 1/2',
+                totalCocheras : '1',
+                totalMetros : '160' 
              },
              {
                  precio : "4.9 MDP",
@@ -200,7 +204,11 @@ export default {
                     { src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg', index : 1 }, 
                     { src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg', index : 2 }, 
                     { src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg', index : 3},
-                ]
+                ],
+                totalCuartos : '10' ,
+                totalBanos  : '2 1/2',
+                totalCocheras : '1',
+                totalMetros : '160' 
              },{
                  precio : "4.9 MDP",
                  direccion : "Casa en San Miguel, La primavera",
@@ -212,7 +220,11 @@ export default {
                     { src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg', index : 1 }, 
                     { src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg', index : 2 }, 
                     { src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg', index : 3},
-                ]
+                ],
+                totalCuartos : '10' ,
+                totalBanos  : '2 1/2',
+                totalCocheras : '',
+                totalMetros : '100' 
              },{
                  precio : "4.9 MDP",
                  direccion : "Casa en San Miguel, La primavera",
@@ -224,7 +236,11 @@ export default {
                     { src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg', index : 1 }, 
                     { src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg', index : 2 }, 
                     { src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg', index : 3},
-                ]
+                ],
+                totalCuartos : '10' ,
+                totalBanos  : '',
+                totalCocheras : '1',
+                totalMetros : '160' 
              },{
                  precio : "4.9 MDP",
                  direccion : "Casa en San Miguel, La primavera",
@@ -236,7 +252,11 @@ export default {
                     { src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg', index : 1 }, 
                     { src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg', index : 2 }, 
                     { src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg', index : 3},
-                ]
+                ],
+                totalCuartos : '10' ,
+                totalBanos  : '2 1/2',
+                totalCocheras : '1',
+                totalMetros : '160' 
              },{
                  precio : "4.9 MDP",
                  direccion : "Casa en San Miguel, La primavera",
@@ -248,7 +268,11 @@ export default {
                     { src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg', index : 1 }, 
                     { src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg', index : 2 }, 
                     { src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg', index : 3},
-                ]
+                ],
+                totalCuartos : '10' ,
+                totalBanos  : '2 1/2',
+                totalCocheras : '1',
+                totalMetros : '160' 
              },
          ],
          opcionesinteres:['Compra','Renta','Venta'],
